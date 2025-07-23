@@ -13,7 +13,7 @@ import {
   CarouselPrevious,
 } from "../../../../components/ui/carousel";
 
-// Testimonial data for mapping
+// Testimonial data for 
 const testimonials = [
   {
     quote:

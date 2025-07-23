@@ -2,7 +2,7 @@ import React from "react";
 import { Badge } from "../../../../components/ui/badge";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
-
+import bannervideo from "../../../../assets/bannervideo.mp4";
 export const HeroSection = (): JSX.Element => {
   return (
     <section className="flex flex-col items-center pt-28 pb-20 px-8 sm:pt-28 sm:pb-20 sm:px-8 px-5 py-[60px] relative self-stretch w-full flex-[0_0_auto] bg-white">
@@ -106,139 +106,27 @@ export const HeroSection = (): JSX.Element => {
         {/* Card/graphic */}
         <div className="w-full">
           {/* Desktop/Tablet */}
-          <Card className="relative self-stretch w-full h-[480px] bg-[#387ff5] rounded-3xl overflow-hidden border border-solid border-[#d1d5e2] sm:block hidden">
+          <Card className="relative self-stretch w-full h-[480px]  rounded-3xl overflow-hidden border border-solid border-[#d1d5e2] sm:block hidden">
             <div className="relative w-[746px] h-[480px]">
-              <div className="absolute w-[746px] h-[480px] top-0 left-0 bg-[#6099f7] overflow-hidden">
-                <div className="absolute w-[1173px] h-[716px] top-0 left-0">
-                  <img
-                    className="absolute w-[746px] h-[480px] top-0 left-0"
-                    alt="Grid"
-                    src="https://c.animaapp.com/md8qit7hIsaPL2/img/grid.svg"
-                  />
-                  <div className="absolute w-[186px] h-[186px] top-[148px] left-[239px]">
-                    <div className="h-[186px]">
-                      <div className="relative w-[186px] h-[186px] rounded-[92.76px]">
-                        <div className="absolute w-[186px] h-[186px] top-0 left-0 bg-[#ffffff66] rounded-[92.76px] opacity-20" />
-                        <div className="absolute w-[135px] h-[136px] top-[23px] left-6 bg-[#ffffff99] rounded-[67.5px/68px] opacity-20" />
-                        <div className="absolute w-[27px] h-[27px] top-[78px] left-[78px] bg-[#ffffff99] rounded-[13.25px]" />
-                      </div>
-                    </div>
-                  </div>
-                  <div className="absolute w-[55px] h-[55px] top-24 left-[410px]">
-                    <div className="relative h-[55px] rounded-[27.5px]">
-                      <div className="absolute w-[55px] h-[55px] top-0 left-0 bg-[#ffffff66] rounded-[27.5px] opacity-20" />
-                      <div className="absolute w-[35px] h-[35px] top-[9px] left-[9px] bg-[#ffffff99] rounded-[17.5px] opacity-20" />
-                      <div className="absolute w-[18px] h-[18px] top-[18px] left-[18px] bg-[#ffffff99] rounded-[8.75px]" />
-                    </div>
-                  </div>
-                  <div className="absolute w-[129px] h-[129px] top-[334px] left-[158px]">
-                    <div className="relative h-[129px] rounded-[64.5px]">
-                      <div className="absolute w-[129px] h-[129px] top-0 left-0 bg-[#ffffff66] rounded-[64.5px] opacity-20" />
-                      <div className="absolute w-[69px] h-[69px] top-[29px] left-[29px] bg-[#ffffff99] rounded-[34.73px] opacity-20" />
-                      <div className="absolute w-[35px] h-[35px] top-[46px] left-[46px] bg-[#ffffff99] rounded-[17.37px]" />
-                    </div>
-                  </div>
-                  <div className="absolute w-[472px] h-[472px] top-[244px] left-[701px]">
-                    <div className="relative h-[472px] rounded-[236px]">
-                      <div className="absolute w-[472px] h-[472px] top-0 left-0 bg-[#ffffff66] rounded-[236px] opacity-20" />
-                      <div className="absolute w-[254px] h-[254px] top-[104px] left-[104px] bg-[#ffffff99] rounded-[127.08px] opacity-20" />
-                    </div>
-                  </div>
-                  <div className="absolute w-[746px] h-[480px] top-0 left-0 bg-[#387ff51a]" />
-                </div>
-                <div className="absolute w-[352px] h-[352px] -top-32 left-[-353px]">
-                  <div className="relative h-[352px] rounded-[176px]">
-                    <div className="absolute w-[352px] h-[352px] top-0 left-0 bg-[#ffffff66] rounded-[176px] opacity-20" />
-                    <div className="absolute w-[190px] h-[190px] top-[78px] left-[78px] bg-[#ffffff99] rounded-[94.77px] opacity-20" />
-                  </div>
-                </div>
-              </div>
-              <Button
-                className="inline-flex items-center gap-3 pl-3 pr-6 py-3 absolute top-[186px] left-[198px] bg-white rounded-[48px] border-[12px] border-solid border-[#c3d0ff59] backdrop-blur-[6px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(6px)_brightness(100%)]"
-                variant="ghost"
-              >
-                <div className="relative w-[60px] h-[60px]">
-                  <img
-                    className="absolute w-[53px] h-[53px] top-1 left-1"
-                    alt="Icon play"
-                    src="https://c.animaapp.com/md8qit7hIsaPL2/img/icon-play.svg"
-                  />
-                </div>
-                <div className="inline-flex flex-col items-start justify-center relative flex-[0_0_auto]">
-                  <h3 className="relative w-fit mt-[-1.00px] font-body-md-semibold font-[number:var(--body-md-semibold-font-weight)] text-[#1c1f25] text-[length:var(--body-md-semibold-font-size)] tracking-[var(--body-md-semibold-letter-spacing)] leading-[var(--body-md-semibold-line-height)] whitespace-nowrap [font-style:var(--body-md-semibold-font-style)]">
-                    Watch introduce video
-                  </h3>
-                  <div className="inline-flex gap-2 items-center relative flex-[0_0_auto]">
-                    <span className="relative w-fit mt-[-1.00px] opacity-80 font-body-base-regular font-[number:var(--body-base-regular-font-weight)] text-[#4b5162] text-[length:var(--body-base-regular-font-size)] tracking-[var(--body-base-regular-letter-spacing)] leading-[var(--body-base-regular-line-height)] whitespace-nowrap [font-style:var(--body-base-regular-font-style)]">
-                      5 mins
-                    </span>
-                    <div className="relative w-1 h-1 bg-[#32438b33] rounded-sm" />
-                    <span className="relative w-fit mt-[-1.00px] font-body-base-medium font-[number:var(--body-base-medium-font-weight)] text-[#387ff5] text-[length:var(--body-base-medium-font-size)] tracking-[var(--body-base-medium-letter-spacing)] leading-[var(--body-base-medium-line-height)] whitespace-nowrap [font-style:var(--body-base-medium-font-style)]">
-                      Play video
-                    </span>
-                  </div>
-                </div>
-              </Button>
+               <video
+                           className="absolute w-full h-[480px]  object-cover"
+                           src={bannervideo}
+                           controls
+                           poster="https://c.animaapp.com/mdd04i9koSfWJV/img/image-2.png"
+                         />
             </div>
           </Card>
           {/* Mobile */}
-          <Card className="w-full h-[267px] bg-[#387ff5] rounded-3xl overflow-hidden border-[#d1d5e2] sm:hidden block">
+          <Card className="w-full h-[267px]  rounded-3xl overflow-hidden border-[#d1d5e2] sm:hidden block">
             <CardContent className="p-0 h-full relative">
               <div className="relative w-[380px] h-[267px]">
-                <div className="absolute w-[380px] h-[267px] top-0 left-0 bg-[#6099f7] overflow-hidden">
-                  <div className="absolute w-[405px] h-[367px] -top-2.5 left-[-25px]">
-                    <img
-                      className="absolute w-[380px] h-[267px] top-2.5 left-[25px]"
-                      alt="Grid"
-                      src="https://c.animaapp.com/mda992oeRqV2dl/img/grid.svg"
-                    />
-                    <div className="absolute w-[186px] h-[186px] top-[52px] left-[81px]">
-                      <div className="h-[186px]">
-                        <div className="relative w-[186px] h-[186px] rounded-[92.76px]">
-                          <div className="absolute w-[186px] h-[186px] top-0 left-0 bg-[#ffffff66] rounded-[92.76px] opacity-20" />
-                          <div className="absolute w-[135px] h-[136px] top-[23px] left-6 bg-[#ffffff99] rounded-[67.5px/68px] opacity-20" />
-                          <div className="absolute w-[27px] h-[27px] top-[78px] left-[78px] bg-[#ffffff99] rounded-[13.25px]" />
-                        </div>
-                      </div>
-                    </div>
-                    <div className="absolute w-[55px] h-[55px] top-0 left-[252px]">
-                      <div className="relative h-[55px] rounded-[27.5px]">
-                        <div className="absolute w-[55px] h-[55px] top-0 left-0 bg-[#ffffff66] rounded-[27.5px] opacity-20" />
-                        <div className="absolute w-[35px] h-[35px] top-[9px] left-[9px] bg-[#ffffff99] rounded-[17.5px] opacity-20" />
-                        <div className="absolute w-[18px] h-[18px] top-[18px] left-[18px] bg-[#ffffff99] rounded-[8.75px]" />
-                      </div>
-                    </div>
-                    <div className="absolute w-[129px] h-[129px] top-[238px] left-0">
-                      <div className="relative h-[129px] rounded-[64.5px]">
-                        <div className="absolute w-[129px] h-[129px] top-0 left-0 bg-[#ffffff66] rounded-[64.5px] opacity-20" />
-                        <div className="absolute w-[69px] h-[69px] top-[29px] left-[29px] bg-[#ffffff99] rounded-[34.73px] opacity-20" />
-                        <div className="absolute w-[35px] h-[35px] top-[46px] left-[46px] bg-[#ffffff99] rounded-[17.37px]" />
-                      </div>
-                    </div>
-                    <div className="absolute w-[380px] h-[267px] top-2.5 left-[25px] bg-[#387ff51a]" />
-                  </div>
-                  <div className="absolute w-[352px] h-[352px] top-[-234px] left-[-536px]">
-                    <div className="relative h-[352px] rounded-[176px]">
-                      <div className="absolute w-[352px] h-[352px] top-0 left-0 bg-[#ffffff66] rounded-[176px] opacity-20" />
-                      <div className="absolute w-[190px] h-[190px] top-[78px] left-[78px] bg-[#ffffff99] rounded-[94.77px] opacity-20" />
-                    </div>
-                  </div>
-                  <div className="absolute w-[472px] h-[472px] top-[138px] left-[518px]">
-                    <div className="relative h-[472px] rounded-[236px]">
-                      <div className="absolute w-[472px] h-[472px] top-0 left-0 bg-[#ffffff66] rounded-[236px] opacity-20" />
-                      <div className="absolute w-[254px] h-[254px] top-[104px] left-[104px] bg-[#ffffff99] rounded-[127.08px] opacity-20" />
-                    </div>
-                  </div>
-                </div>
-                <div className="inline-flex items-center justify-center absolute top-20 left-[136px] bg-white rounded-[48px] border-[12px] border-solid border-[#c3d0ff59] backdrop-blur-[6px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(6px)_brightness(100%)]">
-                  <div className="relative w-[60px] h-[60px] flex items-center justify-center">
-                    <img
-                      className="w-[53px] h-[53px]"
-                      alt="Play icon"
-                      src="https://c.animaapp.com/mda992oeRqV2dl/img/l-icon-2.svg"
-                    />
-                  </div>
-                </div>
+                  <video
+                           className="absolute w-full h-[267px]  object-cover"
+                           src={bannervideo}
+                           controls
+                           poster="https://c.animaapp.com/mdd04i9koSfWJV/img/image-2.png"
+                         />
+               
               </div>
             </CardContent>
           </Card>

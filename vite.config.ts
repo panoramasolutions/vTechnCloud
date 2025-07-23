@@ -16,5 +16,5 @@ export default defineConfig(({ mode }) => ({
       plugins: [tailwind()],
     },
   },
-  base:"/vTechnoCloud"
+  base:"/vTechnCloud"
 }));

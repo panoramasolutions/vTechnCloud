@@ -36,8 +36,9 @@ export const FooterSection = (): JSX.Element => {
     links: FooterLink[];
   }[] = [
     {
-      title: "VTECHNOCLOUD SOLUTIONS INC.1550 WATERS RIDGE DR BLDG1 STE 300 LEWISVILLE, TX 75057",
+      title: "Address",
       links: [
+        { text: "VTECHNOCLOUD SOLUTIONS INC.1550 WATERS RIDGE DR BLDG1 STE 300 LEWISVILLE, TX 75057", url: "#" },
         { text: "E-Mail: info@vtechnocloud.com", url: "#" },
         { text: "Phone: ‪+1 (469) 427-0751", url: "#" },
       ],
@@ -131,20 +132,20 @@ export const FooterSection = (): JSX.Element => {
               <Separator className="w-full h-px" />
             </div>
           </div>
-          <div className="flex flex-wrap gap-[32px] w-full">
+          <div className="flex flex-wrap gap-[32px] w-full items-start">
             {isDesktop
               ? footerColumnsDesktop.map((column, index) => (
                   <div
                     key={`column-${index}`}
                     className="flex flex-col min-w-40 justify-center gap-4 flex-1 grow items-start"
                   >
-                    <h3 className="font-heading-desktop-h6-bold text-[#343844] text-[length:var(--heading-desktop-h6-bold-font-size)] tracking-[var(--heading-desktop-h6-bold-letter-spacing)] leading-[var(--heading-desktop-h6-bold-line-height)]">
+                    <h3 className="font-heading-desktop-h6-bold text-[#343844] text-[length:var(--heading-desktop-h6-bold-font-size)] tracking-[var(--heading-desktop-h6-bold-letter-spacing)] leading-[var(--heading-desktop-h6-bold-line-height)] font-bold">
                       {column.title}
                     </h3>
                     <div className="flex flex-col items-start justify-center gap-2">
                       {column.links.map((link, linkIndex) => (
-                          <span className="font-button-base-medium text-[#343844] text-[length:var(--button-base-medium-font-size)] tracking-[var(--button-base-medium-letter-spacing)] leading-[var(--button-base-medium-line-height)]">
-                            {link.text}
+                          <span className="font-button-base-medium text-[#343844] text-[length:var(--button-base-medium-font-size)] tracking-[var(--button-base-medium-letter-spacing)] leading-[var(--button-base-medium-line-height)] inline-flex gap-2">
+                            {link.icon}{"  "} {link.text}
                           </span>
                        
                       ))}
@@ -214,7 +215,7 @@ export const FooterSection = (): JSX.Element => {
         <Separator className="w-full h-px" />
         <footer className="flex flex-wrap items-center justify-center gap-6 py-5 w-full">
           <div className="flex-1 font-body-sm-regular text-[#343844] text-[length:var(--body-sm-regular-font-size)] tracking-[var(--body-sm-regular-letter-spacing)] leading-[var(--body-sm-regular-line-height)]">
-            ©2023 NIMBUS · All rights reserved.
+            ©2025 VTECHNOCLOUD · All rights reserved.
           </div>
         
         </footer>

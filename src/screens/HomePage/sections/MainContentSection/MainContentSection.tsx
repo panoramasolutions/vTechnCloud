@@ -188,7 +188,7 @@ const [showPopup, setShowPopup] = useState(false);
                   <img
                     src={whatsup}
                     alt="Welcome"
-                    className="w-64 h-64"
+                    className="w-[500px] h-[500px]"
                   />
                   <div className="text-xl font-bold text-[#343844]">Whatsapp us on : +91 9096806080”</div>
                   </div>

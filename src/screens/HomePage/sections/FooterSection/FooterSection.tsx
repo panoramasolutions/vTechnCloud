@@ -6,7 +6,7 @@ import {
 } from "lucide-react";
 import React from "react";
 import { Separator } from "../../../../components/ui/seperator";
-import logo from "../../../../assets/logo.png";
+import logo from "../../../../assets/logo.svg";
 export const FooterSection = (): JSX.Element => {
   const [isDesktop, setIsDesktop] = React.useState(
     typeof window !== "undefined" ? window.innerWidth > 810 : true
@@ -36,10 +36,10 @@ export const FooterSection = (): JSX.Element => {
     links: FooterLink[];
   }[] = [
     {
-      title: "About Neuros",
+      title: "VTECHNOCLOUD SOLUTIONS INC.1550 WATERS RIDGE DR BLDG1 STE 300 LEWISVILLE, TX 75057",
       links: [
-        { text: "Company Overview", url: "#" },
-        { text: "Careers", url: "#" },
+        { text: "E-Mail: info@vtechnocloud.com", url: "#" },
+        { text: "Phone: ‪+1 (469) 427-0751", url: "#" },
       ],
     },
     {
@@ -85,16 +85,16 @@ export const FooterSection = (): JSX.Element => {
 
   const footerCategoriesMobile = [
     {
-      title: "About Neuros",
-      links: ["Company Overview", "Careers", "Press & Media", "Testimonials"],
+      title: "About VTECHNOCLOUD",
+      links: ["info@vtechnocloud.com", "+1 (469) 427-0751",],
     },
     {
       title: "Resources",
-      links: ["Blog", "Help Center", "Webinars & Events", "Case Studies"],
+      links: [ "Help Center", "Case Studies"],
     },
     {
       title: "Support & Contact",
-      links: ["Contact Us", "Technical Support", "Feedback", "Community Forum"],
+      links: ["Contact Us", "Technical Support", "Feedback"],
     },
   ];
 
@@ -122,10 +122,10 @@ export const FooterSection = (): JSX.Element => {
       <div className="flex flex-col max-w-[1204px] items-center w-full">
         <div className="flex flex-col items-start gap-[60px] pb-28 w-full">
           <div className="flex items-center gap-5 w-full">
-            <div className="relative w-[113.78px] h-8" >    <img
+            <div className="relative w-[113.78px] h-12" >    <img
                             src={logo}
                             alt="Nimbus logo"
-                            className="absolute w-[180] h-[45] top-[3px] left-0"
+                            className="absolute w-[180] h-[30] top-[-30px] left-0"
                             /></div>
             <div className="flex flex-col h-px items-center justify-center gap-2 flex-1">
               <Separator className="w-full h-px" />
@@ -143,16 +143,10 @@ export const FooterSection = (): JSX.Element => {
                     </h3>
                     <div className="flex flex-col items-start justify-center gap-2">
                       {column.links.map((link, linkIndex) => (
-                        <a
-                          key={`link-${index}-${linkIndex}`}
-                          href={link.url}
-                          className="inline-flex items-center gap-1"
-                        >
-                          {link?.icon && link?.icon}
                           <span className="font-button-base-medium text-[#343844] text-[length:var(--button-base-medium-font-size)] tracking-[var(--button-base-medium-letter-spacing)] leading-[var(--button-base-medium-line-height)]">
                             {link.text}
                           </span>
-                        </a>
+                       
                       ))}
                     </div>
                   </div>
@@ -222,17 +216,7 @@ export const FooterSection = (): JSX.Element => {
           <div className="flex-1 font-body-sm-regular text-[#343844] text-[length:var(--body-sm-regular-font-size)] tracking-[var(--body-sm-regular-letter-spacing)] leading-[var(--body-sm-regular-line-height)]">
             ©2023 NIMBUS · All rights reserved.
           </div>
-          <div className="flex items-center gap-6">
-            {legalLinks.map((link, index) => (
-              <a
-                key={`legal-${index}`}
-                href={link.url}
-                className="font-button-small-medium text-[#343844] text-[length:var(--button-small-medium-font-size)] tracking-[var(--button-small-medium-letter-spacing)] leading-[var(--button-small-medium-line-height)]"
-              >
-                {link.text}
-              </a>
-            ))}
-          </div>
+        
         </footer>
       </div>
     </section>

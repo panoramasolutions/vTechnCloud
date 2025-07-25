@@ -4,8 +4,11 @@ import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
 
 import bannervideo from "../../../../assets/bannervideo.mp4";
+import company from "../../../../assets/Pic.png";
+import companies from "../../../../assets/Pict.png";
+import whatsup from "../../../../assets/w.jpg";
 
-export const MainContentSection = ({ keyFeaturesRef }: { keyFeaturesRef?: React.RefObject<HTMLDivElement> })=> {
+export const MainContentSection = ({ keyFeaturesRef,aboutusRef,ourServicesRef,testimonialRef,faqRef,handleNavClick }:any)=> {
   // Data for the "About Us" feature cards
   const featureCards = [
     {
@@ -30,38 +33,7 @@ export const MainContentSection = ({ keyFeaturesRef }: { keyFeaturesRef?: React.
 
   // Data for the service cards
   const serviceCards = [
-    {
-      icon: "https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-7.svg",
-      title: "Cloud Engineering & Migration",
-      description:
-        "Migrate securely, optimize costs, and scale dynamically—without disruption.",
-      highlighted: true,
-    },
-    {
-      icon: "https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-8.svg",
-      title: "Intelligent Data & Analytics",
-      description:
-        "From ETL modernization to AI‑powered BI, we turn raw data into real-time insights and action.",
-    },
-    {
-      icon: "https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-4.svg",
-      title: "Secured Backup",
-      description:
-        "Automated, encrypted backups plus disaster-ready recovery plans—always business-ready.",
-    },
-    {
-      icon: "https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-2.svg",
-      title: "Networking & Infrastructure",
-      description:
-        "Architect resilient networks—wired, wireless, hybrid—designed for performance and security.",
-    },
-    {
-      icon: "https://c.animaapp.com/mdd04i9koSfWJV/img/component-1.svg",
-      title: "Automation & DevOps",
-      description:
-        "Streamline delivery pipelines, cut errors, and embrace agility with full-stack CI/CD and IaC.",
-    },
-    {
+     {
       icon: "https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-3.svg",
       title: "Cloud Strategy & Consulting",
       description:
@@ -74,35 +46,55 @@ export const MainContentSection = ({ keyFeaturesRef }: { keyFeaturesRef?: React.
         "We offer an intuitive interface that's easy to navigate, ensuring you spend less time figuring things out and more time analyzing.",
     },
     {
-      icon: "https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-1.svg",
-      title: "Business Intelligence",
-      description:
-        "Receive automated insights and recommendations tailored to your business needs. Let Neuros's AI guide your strategies.",
-    },
-    {
       icon: "https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-5.svg",
       title: "Full-Stack Development",
       description:
         "Whether you're a startup or an enterprise, Neuros scales with you. Experience robust analytics solutions that adapt to your growth.",
     },
+
       {
       icon: "https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-6.svg",
-      title: "Data Engineering",
+      title: "Python Expert",
       description:
-        "We offer an intuitive interface that's easy to navigate, ensuring you spend less time figuring things out and more time analyzing.",
+        "Develop robust, scalable, and secure backend systems, automate business tasks, and build APIs using industry-best Python practices",
     },
+    
+      {
+      icon: "https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-6.svg",
+      title: "AI/ML",
+      description:
+        "Deploy cutting-edge AI/ML solutions to automate decision-making, detect patterns, and enhance user experience with predictive insights",
+    },
+     {
+      icon: "https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-1.svg",
+      title: "Business Intelligence(Power BI)",
+      description:
+        "Leverage Power BI dashboards and reports to gain visual insights, monitor KPIs, and drive smarter business strategies",
+    },
+   
+    {
+      icon: "https://c.animaapp.com/mdd04i9koSfWJV/img/component-1.svg",
+      title: "Automation & DevOps",
+      description:
+        "Streamline delivery pipelines, cut errors, and embrace agility with full-stack CI/CD and IaC.",
+    },
+   
+    
+    
     {
       icon: "https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-1.svg",
-      title: "Business Intelligence",
+      title: "Business Development",
       description:
         "Receive automated insights and recommendations tailored to your business needs. Let Neuros's AI guide your strategies.",
     },
-    {
-      icon: "https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-5.svg",
-      title: "Full-Stack Development",
+
+     {
+      icon: "https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-2.svg",
+      title: "Networking & Infrastructure",
       description:
-        "Whether you're a startup or an enterprise, Neuros scales with you. Experience robust analytics solutions that adapt to your growth.",
+        "Architect resilient networks—wired, wireless, hybrid—designed for performance and security.",
     },
+   
   ];
 
   // Data for the "How We Work" steps
@@ -129,7 +121,7 @@ export const MainContentSection = ({ keyFeaturesRef }: { keyFeaturesRef?: React.
   ];
 
     const [showAllServices, setShowAllServices] = useState(false);
-
+const [showPopup, setShowPopup] = useState(false);
   // How many to show initially
   const initialServiceCount = 9;
 
@@ -166,14 +158,15 @@ export const MainContentSection = ({ keyFeaturesRef }: { keyFeaturesRef?: React.
             </div>
 
             <div className="flex items-start gap-3">
-              <Button className="px-5 py-3 bg-[#387ff5] rounded-xl text-white">
+              <Button className="px-5 py-3 bg-[#387ff5] rounded-xl text-white" onClick={()=>handleNavClick("Our Services")}>
                 Explore Our Services
               </Button>
 
-              <Button
+                <Button
                 variant="outline"
                 className="flex items-center gap-2 px-5 py-3 rounded-xl border border-solid border-[#343844] backdrop-blur-[6px]"
-              >
+                onClick={() => setShowPopup(true)}
+                >
                 <img
                   className="w-6 h-6"
                   alt="L icon"
@@ -182,7 +175,25 @@ export const MainContentSection = ({ keyFeaturesRef }: { keyFeaturesRef?: React.
                 <span className="font-button-base-bold text-[#343844]">
                   Get a Free Strategy Call
                 </span>
-              </Button>
+                </Button>
+                {showPopup && (
+                <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-40 z-50">
+                  <div className="bg-white rounded-xl p-8 flex flex-col items-center gap-4 shadow-lg relative">
+                  <button
+                    className="absolute top-2 right-2 text-gray-500 hover:text-gray-700 w-8"
+                    onClick={() => setShowPopup(false)}
+                  >
+                    &times;
+                  </button>
+                  <img
+                    src={whatsup}
+                    alt="Welcome"
+                    className="w-64 h-64"
+                  />
+                  <div className="text-xl font-bold text-[#343844]">Whatsapp us on : +91 9096806080”</div>
+                  </div>
+                </div>
+                )}
             </div>
           </div>
 
@@ -212,15 +223,20 @@ export const MainContentSection = ({ keyFeaturesRef }: { keyFeaturesRef?: React.
           </p>
 
           <img
-            className="min-w-[1000px] max-w-[1204px] w-full"
+            className="min-w-[1240px] w-full"
             alt="Logo"
-            src="https://c.animaapp.com/mdd04i9koSfWJV/img/logo.svg"
+            src={company}
+          />
+           <img
+            className="min-w-[1240px] w-full"
+            alt="Logo"
+            src={companies}
           />
         </div>
       </section>
 
       {/* About Us Section */}
-      <section className="pt-[75px] pb-28 px-8 w-full flex flex-col items-center gap-[60px] bg-white  w-full">
+      <section ref={aboutusRef} className="pt-[75px] pb-28 px-8 w-full flex flex-col items-center gap-[60px] bg-white  w-full">
         <div className="flex flex-col items-center gap-[60px] w-full max-w-[1204px]">
           <div className="flex flex-col max-w-[520px] items-center gap-8 w-full">
             <div className="flex flex-col items-center gap-4 w-full">
@@ -387,7 +403,7 @@ export const MainContentSection = ({ keyFeaturesRef }: { keyFeaturesRef?: React.
       </section>
 
       {/* Our Services Section */}
-      <section className="flex flex-col items-center gap-[60px] pb-28 px-8 w-full bg-white">
+      <section ref={ourServicesRef} className="flex flex-col items-center gap-[60px] pb-28 px-8 w-full bg-white">
         <div className="flex flex-col items-center gap-[60px] w-full max-w-[1204px]">
           <div className="max-w-[800px] w-full flex flex-col items-center gap-8">
             <div className="flex flex-col items-center gap-4 w-full">
@@ -433,21 +449,14 @@ export const MainContentSection = ({ keyFeaturesRef }: { keyFeaturesRef?: React.
                         {service.description}
                       </p>
                     </div>
-                    <div className="font-body-sm-regular text-[#387ff5]">
-                      Know more
-                    </div>
-                    <img
-                      className="w-[11.03px] h-[10.74px]"
-                      alt="Vector"
-                      src="https://c.animaapp.com/mdd04i9koSfWJV/img/vector-9.svg"
-                    />
+                
                   </CardContent>
                 </Card>
               ))}
             </div>
           </div>
           {/* Button and image always at the bottom after all cards */}
-          <div className="flex flex-col w-full items-center justify-end gap-2 px-6 py-0 mt-8 relative">
+          {/* <div className="flex flex-col w-full items-center justify-end gap-2 px-6 py-0 mt-8 relative">
             <img
               className="absolute w-full h-[263px] top-[-300px] left-0"
               alt="Gradient mask"
@@ -462,12 +471,12 @@ export const MainContentSection = ({ keyFeaturesRef }: { keyFeaturesRef?: React.
                 {showAllServices ? "Reduce applications" : "Explore more application"}
               </span>
             </Button>
-          </div>
+          </div> */}
         </div>
       </section>
 
       {/* Key Features Section */}
-      <section className="pt-[50px] pb-28 px-8 flex flex-col items-center gap-[60px] bg-white  w-full" ref={keyFeaturesRef}>
+      <section  ref={keyFeaturesRef} className="pt-[50px] pb-28 px-8 flex flex-col items-center gap-[60px] bg-white  w-full" >
         <div className="flex flex-col w-full items-center gap-20 max-w-[1204px]">
           <div className="max-w-[612px] w-[612px] flex flex-col items-center gap-8">
             <div className="flex flex-col items-center gap-4 w-full">

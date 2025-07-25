@@ -1,5 +1,5 @@
-import React from "react";
-import { ChevronDownIcon } from "lucide-react";
+import React, { useState ,useEffect} from "react";
+import { ChevronDownIcon, Menu, X } from "lucide-react";
 import { Button } from "../../../../components/ui/button";
 import {
   NavigationMenu,
@@ -7,129 +7,119 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "../../../../components/ui/navigation-menu";
-import logo from "../../../../assets/logo.png";
+import { Sheet, SheetContent, SheetTrigger } from "../../../../components/ui/sheet";
+import logo from "../../../../assets/logo.svg";
+// import { useWindowSize } from "../../../../hooks/useWindowSize";
 
 type NavigationBarSectionProps = {
-  onFeaturesClick?: () => void;
+  handleNavClick?: (label: string) => void;
 };
 
-export const NavigationBarSection = ({ onFeaturesClick }: NavigationBarSectionProps): JSX.Element => {
-  // Top navigation items data
-  const topNavLeft = [
-    { label: "English", hasDropdown: true },
-    { label: "Support", hasDropdown: false },
-  ];
+const useWindowSize = () => {
+  const [width, setWidth] = useState<number>(0);
 
-  const topNavRight = [
-    { label: "Blog", hasDropdown: false },
-    { label: "About us", hasDropdown: true },
-  ];
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+    handleResize(); // Initial width
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
-  // Main navigation items data
+  return width;
+};
+
+export const NavigationBarSection = ({ handleNavClick }: NavigationBarSectionProps) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const width = useWindowSize();
+  const isMobile = width < 800;
+
   const mainNavItems = [
+    { label: "Home", hasDropdown: true },
+    { label: "About us", hasDropdown: true },
+    { label: "Our Services", hasDropdown: true },
     { label: "Features", hasDropdown: true },
-    { label: "Case Studies", hasDropdown: true },
-    { label: "Pricing", hasDropdown: false },
-    { label: "Applications", hasDropdown: false },
+    { label: "Testimonial", hasDropdown: true },
+    { label: "FAQ", hasDropdown: true },
   ];
+
+  const NavItems = () => (
+    <>
+      {mainNavItems.map((item, index) => (
+        <NavigationMenuItem 
+          key={`main-nav-${index}`}
+          className={isMobile ? "w-full" : ""}
+        >
+          <NavigationMenuTrigger
+            className={`
+              inline-flex items-center gap-1 relative flex-[0_0_auto] 
+              bg-transparent hover:bg-transparent focus:bg-transparent text-[#343844]
+              ${isMobile ? "w-full justify-start" : ""}
+            `}
+            onClick={() => {
+              handleNavClick?.(item.label);
+              setIsOpen(false);
+            }}
+          >
+            <span className="relative w-fit mt-[-1.00px] font-button-base-medium text-[#343844] whitespace-nowrap">
+              {item.label}
+            </span>
+          </NavigationMenuTrigger>
+        </NavigationMenuItem>
+      ))}
+    </>
+  );
 
   return (
     <header className="flex items-center justify-around gap-[167px] px-8 py-0 relative self-stretch w-full flex-[0_0_auto] z-[2] bg-white">
-      <div className="flex flex-col max-w-[1204px] items-start relative flex-1 grow border-b [border-bottom-style:solid] border-[#d1d5e2]">
-        {/* Top navigation bar */}
-        <div className="flex items-center justify-between pt-5 pb-0 px-0 relative self-stretch w-full flex-[0_0_auto]">
-          <nav className="inline-flex items-start gap-5 relative flex-[0_0_auto]">
-            {topNavLeft.map((item, index) => (
-              <div
-                key={`top-left-${index}`}
-                className="inline-flex items-center gap-1 relative flex-[0_0_auto]"
-              >
-                <span className="relative w-fit mt-[-1.00px] font-button-small-medium font-[number:var(--button-small-medium-font-weight)] text-[#343844] text-[length:var(--button-small-medium-font-size)] text-center tracking-[var(--button-small-medium-letter-spacing)] leading-[var(--button-small-medium-line-height)] whitespace-nowrap [font-style:var(--button-small-medium-font-style)]">
-                  {item.label}
-                </span>
-                {item.hasDropdown && (
-                  <ChevronDownIcon className="w-4 h-4 text-[#79829f]" />
-                )}
-              </div>
-            ))}
-          </nav>
-
-          <nav className="inline-flex items-start gap-5 relative flex-[0_0_auto]">
-            {topNavRight.map((item, index) => (
-              <div
-                key={`top-right-${index}`}
-                className="inline-flex items-center gap-1 relative flex-[0_0_auto]"
-              >
-                <span className="relative w-fit mt-[-1.00px] font-button-small-medium font-[number:var(--button-small-medium-font-weight)] text-[#343844] text-[length:var(--button-small-medium-font-size)] text-center tracking-[var(--button-small-medium-letter-spacing)] leading-[var(--button-small-medium-line-height)] whitespace-nowrap [font-style:var(--button-small-medium-font-style)]">
-                  {item.label}
-                </span>
-                {item.hasDropdown && (
-                  <ChevronDownIcon className="w-4 h-4 text-[#79829f]" />
-                )}
-              </div>
-            ))}
-          </nav>
-        </div>
-
-        {/* Main navigation bar */}
+      <div className="flex flex-col max-w-[1204px] items-start relative flex-1 grow border-b border-[#d1d5e2]">
         <div className="flex items-center justify-between px-0 py-5 relative self-stretch w-full flex-[0_0_auto]">
           <div className="inline-flex items-center gap-10 relative self-stretch flex-[0_0_auto]">
             {/* Logo */}
-            <div className="relative w-[180px] h-[44px]">
-                <img
+            <div className="relative w-[113.78px] h-12">
+              <img
                 src={logo}
                 alt="Nimbus logo"
-                className="absolute w-[180] h-[45] top-[3px] left-0"
-                />
-             
+                className="absolute w-[180] h-[6] top-[-30px] left-0"
+              />
             </div>
 
-            {/* Main navigation items */}
-            <NavigationMenu>
-              <NavigationMenuList className="inline-flex items-center gap-8 relative flex-[0_0_auto]">
-                {mainNavItems.map((item, index) => (
-                  <NavigationMenuItem key={`main-nav-${index}`}>
-                    {item.hasDropdown ? (
-                        <NavigationMenuTrigger
-                        className="inline-flex items-center gap-1 relative flex-[0_0_auto] bg-transparent hover:bg-transparent focus:bg-transparent text-[#343844]"
-                        onClick={
-                          item.label === "Features" && onFeaturesClick
-                          ? onFeaturesClick
-                          : undefined
-                        }
-                        >
-                        <span className="relative w-fit mt-[-1.00px] font-button-base-medium font-[number:var(--button-base-medium-font-weight)] text-[#343844] text-[length:var(--button-base-medium-font-size)] text-center tracking-[var(--button-base-medium-letter-spacing)] leading-[var(--button-base-medium-line-height)] whitespace-nowrap [font-style:var(--button-base-medium-font-style)]">
-                          {item.label}
-                        </span>
-                        </NavigationMenuTrigger>
-                    ) : (
-                      <span className="relative w-fit mt-[-1.00px] font-button-base-medium font-[number:var(--button-base-medium-font-weight)] text-[#4b5162] text-[length:var(--button-base-medium-font-size)] text-center tracking-[var(--button-base-medium-letter-spacing)] leading-[var(--button-base-medium-line-height)] whitespace-nowrap [font-style:var(--button-base-medium-font-style)]">
-                        {item.label}
-                      </span>
-                    )}
-                  </NavigationMenuItem>
-                ))}
-              </NavigationMenuList>
-            </NavigationMenu>
+            {/* Desktop Navigation */}
+            {!isMobile && (
+              <NavigationMenu>
+                <NavigationMenuList className="inline-flex items-center gap-8 relative flex-[0_0_auto]">
+                  <NavItems />
+                </NavigationMenuList>
+              </NavigationMenu>
+            )}
           </div>
 
-          {/* CTA Buttons */}
-          <div className="inline-flex items-center justify-end gap-2 relative flex-[0_0_auto]">
-            <Button
-              variant="outline"
-              className="items-center justify-center px-4 py-3 bg-white rounded-lg overflow-hidden border border-solid border-[#b6d0fb] backdrop-blur-[6px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(6px)_brightness(100%)] h-auto"
-            >
-              <span className="font-button-small-bold font-[number:var(--button-small-bold-font-weight)] text-[#387ff5] text-[length:var(--button-small-bold-font-size)] tracking-[var(--button-small-bold-letter-spacing)] leading-[var(--button-small-bold-line-height)] whitespace-nowrap [font-style:var(--button-small-bold-font-style)]">
-                Get a demo
-              </span>
-            </Button>
-
-            <Button className="items-center justify-center px-4 py-3 bg-[#387ff5] rounded-lg overflow-hidden h-auto">
-              <span className="font-button-small-bold font-[number:var(--button-small-bold-font-weight)] text-white text-[length:var(--button-small-bold-font-size)] tracking-[var(--button-small-bold-letter-spacing)] leading-[var(--button-small-bold-line-height)] whitespace-nowrap [font-style:var(--button-small-bold-font-style)]">
-                Start your free trial
-              </span>
-            </Button>
-          </div>
+          {/* Mobile Navigation */}
+          {isMobile && (
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
+              <SheetTrigger asChild>
+                <Button variant="ghost" size="icon" className="md:hidden">
+                  <Menu className="h-6 w-6" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="left" className="w-[300px] sm:w-[400px]">
+                <div className="flex flex-col gap-4 py-4">
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="absolute right-4 top-4"
+                    onClick={() => setIsOpen(false)}
+                  >
+                    <X className="h-6 w-6" />
+                  </Button>
+                  <NavigationMenu orientation="vertical" className="w-full">
+                    <NavigationMenuList className="flex-col items-start w-full">
+                      <NavItems />
+                    </NavigationMenuList>
+                  </NavigationMenu>
+                </div>
+              </SheetContent>
+            </Sheet>
+          )}
         </div>
       </div>
     </header>

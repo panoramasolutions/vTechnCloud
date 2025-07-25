@@ -13,44 +13,68 @@ import {
 const faqItems = [
   {
     question:
-      "What is Neuros and how does it differ from other analytics platforms?",
+      "What services do you offer?",
     answer:
-      "Neuros is an AI-powered business analytics platform designed to provide real-time insights, predictive analytics, and seamless integrations with various tools. Unlike traditional analytics platforms, Neuros harnesses the power of artificial intelligence to offer more accurate forecasts, customizable dashboards, and a user-friendly interface tailored for businesses of all sizes.",
+      "We offer end-to-end IT services including software development, cloud migration, AI/ML solutions, business intelligence (Power BI), data analytics, automation, secured backup systems, and technical consulting.",
     defaultOpen: true,
   },
   {
-    question: "How does the AI-driven predictive analytics feature work?",
-    answer: "",
+    question: "What industries do you work with?",
+    answer: "We serve clients across multiple industries such as healthcare, finance, retail, logistics, education, and manufacturing. Our solutions are tailored to your domain-specific needs.",
     defaultOpen: false,
   },
   {
-    question: "Is my data secure with Neuros?",
-    answer: "",
-    defaultOpen: false,
-  },
-  {
-    question:
-      "Can I integrate Neuros with other tools and platforms I currently use?",
-    answer: "",
+    question: "Do you offer custom software development?",
+    answer: "Yes, we specialize in building custom software tailored to your business processes—from planning and design to development, deployment, and support.",
     defaultOpen: false,
   },
   {
     question:
-      "How is the pricing structured for Neuros? Are there any hidden fees?",
-    answer: "",
+      "How do you ensure data security and compliance?",
+    answer: "Security is a top priority. We implement best practices in data encryption, access control, secure coding, and follow compliance standards like GDPR, HIPAA, and ISO where required",
     defaultOpen: false,
   },
   {
     question:
-      "I'm new to business analytics. Does Neuros offer any support or tutorials?",
-    answer: "",
+      "Can you help with legacy system modernization?",
+    answer: "Absolutely. We help modernize outdated systems by migrating to modern tech stacks, improving performance, UI/UX, and overall maintainability.",
+    defaultOpen: false,
+  },
+  {
+    question:
+      "What’s your development process like?",
+    answer: "We follow agile methodology with iterative development, regular client feedback, continuous testing, and transparent progress tracking",
+    defaultOpen: false,
+  },
+   {
+    question:
+      "Do you provide post-launch support and maintenance?",
+    answer: "Yes. We offer ongoing support, bug fixes, upgrades, and performance monitoring to ensure your systems remain secure and up-to-date",
+    defaultOpen: false,
+  },
+   {
+    question:
+      "How do we get started with your team?",
+    answer: "You can contact us through our website, schedule a consultation, or email us directly. We'll set up an initial discovery session to understand your goals and propose a tailored solution",
+    defaultOpen: false,
+  },
+   {
+    question:
+      "Do you work with startups and small businesses?",
+    answer: "Yes! Whether you're a startup or a large enterprise, we scale our solutions and pricing to meet your needs and budget",
+    defaultOpen: false,
+  },
+   {
+    question:
+      "Can I hire developers or a dedicated team from you?",
+    answer: "Yes. We offer flexible engagement models including dedicated developers, project-based teams, and staff augmentation depending on your project scope.",
     defaultOpen: false,
   },
 ];
 
-export const FaqSectionDesktop = (): JSX.Element => {
+export const FaqSectionDesktop = ({faqRef}:any) => {
   return (
-    <section className="flex flex-col items-center gap-[60px] pt-32 pb-28 px-8 relative self-stretch w-full flex-[0_0_auto] mb-[-146.22px] bg-white">
+    <section ref={faqRef} className="flex flex-col items-center gap-[60px] pt-32 pb-28 px-8 relative self-stretch w-full flex-[0_0_auto] mb-[-146.22px] bg-white">
       <div className="flex-wrap items-start gap-[48px_48px] flex-[0_0_auto] flex max-w-[1204px] relative w-full">
         <div className="min-w-[360px] max-w-[476px] items-start justify-end gap-6 pl-0 pr-10 py-0 flex-1 grow flex flex-col relative">
           <div className="flex flex-col items-start gap-4 self-stretch w-full relative flex-[0_0_auto]">

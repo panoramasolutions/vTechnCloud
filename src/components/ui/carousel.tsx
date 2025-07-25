@@ -55,10 +55,11 @@ const Carousel = React.forwardRef<
     },
     ref,
   ) => {
-    // Enable loop mode by default, but allow override via opts
-    const mergedOpts = { loop: true, ...opts, axis: orientation === "horizontal" ? "x" as const : "y" as const };
     const [carouselRef, api] = useEmblaCarousel(
-      mergedOpts,
+      {
+        ...opts,
+        axis: orientation === "horizontal" ? "x" : "y",
+      },
       plugins,
     );
     const [canScrollPrev, setCanScrollPrev] = React.useState(false);
@@ -121,7 +122,7 @@ const Carousel = React.forwardRef<
         value={{
           carouselRef,
           api: api,
-          opts: mergedOpts,
+          opts,
           orientation:
             orientation || (opts?.axis === "y" ? "vertical" : "horizontal"),
           scrollPrev,
@@ -144,7 +145,6 @@ const Carousel = React.forwardRef<
     );
   },
 );
-
 Carousel.displayName = "Carousel";
 
 const CarouselContent = React.forwardRef<
@@ -257,5 +257,3 @@ export {
   CarouselPrevious,
   CarouselNext,
 };
-
-

@@ -12,76 +12,75 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "../../../../components/ui/carousel";
-
-export const ClientTestimonialsSection = (): JSX.Element => {
   const testimonials = [
     {
       quote:
-        "In healthcare, data accuracy is paramount. Neuros ensures we have real-time analytics, leading to improved patient care.",
-      name: "Aiden Z. Lee",
+        "Thanks to their cloud migration strategy, we reduced our infrastructure costs and scaled seamlessly—without any downtime",
+      name: "Madison Cole",
       title: "Operations Lead",
       avatarSrc: "https://c.animaapp.com/mde1q96l7iAMhF/img/image-ava.svg",
     },
     {
-      quote:
-        "From the intuitive interface to top-tier customer support, Neuros has exceeded all our expectations.",
-      name: "Linda F.",
+      quote:"With their Power BI expertise, we now make faster, data-driven decisions—what used to take hours now takes minutes.",
+      name: "Jackson Reed",
       title: "Marketing Manager",
       avatarSrc: "https://c.animaapp.com/mde1q96l7iAMhF/img/image-ava.svg",
     },
     {
       quote:
-        "The seamless integrations and customizable dashboards make Neuros an indispensable tool for our business operations.",
-      name: "Rajesh K. Patel",
+        "Their Python automation saved us hundreds of hours. Routine tasks that took days are now completed in just a few clicks.",
+      name: "Avery Bennett",
       title: "CTO",
       avatarSrc: "https://c.animaapp.com/mde1q96l7iAMhF/img/image-ava.svg",
     },
     {
       quote:
-        "Transformed our data stack, halved our reporting lag and boosted actionable insight.",
-      name: "Nathan D. Hall",
+        "The AI solution they built helped us understand customer behavior and boost retention by over 25%.",
+      name: "Logan Brooks",
       title: "COO, Retail Chain",
       avatarSrc: "https://c.animaapp.com/mde1q96l7iAMhF/img/image-ava.svg",
     },
     {
       quote:
-        "Cloud migration was flawless—and the AI layer? Budget-savvy and performance-ready.",
-      name: "Naomi K. Johnson",
+        "They modernized our legacy app into a sleek, high-performance platform—our users noticed the difference instantly",
+      name: " Harper Sullivan",
       title: "CTO, FinTech startup",
       avatarSrc: "https://c.animaapp.com/mde1q96l7iAMhF/img/image-ava.svg",
     },
     {
       quote:
-        "Real-time data processing with vTechnoCloud has changed how we make decisions. It's a must-have tool for modern businesses.",
-      name: "Michael O. Lopez",
+        "We sleep better knowing our backups are automated and disaster-ready. Their secured backup solution is rock solid.",
+      name: "Mason Grant",
       title: "Operations Director",
       avatarSrc: "https://c.animaapp.com/mde1q96l7iAMhF/img/image-ava.svg",
     },
     {
       quote:
-        "The seamless integrations and customizable dashboards make Neuros an indispensable tool for our business operations.",
-      name: "Rajesh K. Patel",
+        "Real-time data integration changed how we operate. We now track shipments live and optimize routes on the go",
+      name: "Chloe Hayes",
       title: "CTO",
       avatarSrc: "https://c.animaapp.com/mde1q96l7iAMhF/img/image-ava.svg",
     },
     {
       quote:
         "Financial forecasting is complex, but Neuros has simplified it for us. Its predictive analytics are second to none.",
-      name: "Isaac L. Kim",
+      name: "Ethan West",
       title: "Chief Financial Officer",
       avatarSrc: "https://c.animaapp.com/mde1q96l7iAMhF/img/image-ava.svg",
     },
     {
       quote:
         "The seamless integrations and customizable dashboards make Neuros an indispensable tool for our business.",
-      name: "Raj K.",
+      name: "Riley Dawson",
       title: "CTO",
       avatarSrc: "https://c.animaapp.com/mde1q96l7iAMhF/img/image-ava.svg",
     },
   ];
+export const ClientTestimonialsSection = ({testimonialRef}:any) => {
+
 
   return (
-    <section className="flex flex-col items-center gap-12 py-32 px-8 w-full bg-white shadow-md relative z-[2]">
+    <section ref={testimonialRef} className="flex flex-col items-center gap-12 py-32 px-8 w-full bg-white shadow-md relative z-[2]">
       <div className="flex flex-col max-w-[1204px] gap-12 w-full items-center">
         <div className="max-w-[800px] w-full flex flex-col items-center gap-8">
           <div className="flex flex-col items-center gap-4 w-full">

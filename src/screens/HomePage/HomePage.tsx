@@ -8,6 +8,8 @@ import { TestimonialCarouselSection } from "./sections/TestimonialCarouselSectio
 import { TrialOfferSection } from "./sections/TrialOfferSection";
 import { ValuePropositionSection } from "./sections/ValuePropositionSection";
 import { FaqSection } from "./sections/FaqSection";
+import company from "../../assets/Pic.png";
+import companies from "../../assets/Pict.png";
 
 
 interface WindowSize {
@@ -128,11 +130,17 @@ const CompanyStats = () => (
       <p className="relative self-stretch mt-[-1.00px] opacity-80 font-body-base-regular text-[#4b5162] text-center">
         160,000+ customers in over 120 countries grow their businesses with Neuros
       </p>
+      
       <img
-        className="relative max-w-[1204px] w-full flex-[0_0_auto]"
-        alt="Logo"
-        src="https://c.animaapp.com/md8qit7hIsaPL2/img/logo.svg"
-      />
+                   className="relative max-w-[1204px] w-full flex-[0_0_auto]"
+                  alt="Logo"
+                  src={company}
+                />
+                 <img
+                   className="relative max-w-[1204px] w-full flex-[0_0_auto]"
+                  alt="Logo"
+                  src={companies}
+                />
     </div>
   </section>
 );

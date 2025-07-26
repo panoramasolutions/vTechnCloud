@@ -56,7 +56,7 @@ export const MainContentSection = ({
       icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-5.svg',
       title: 'Full-Stack Development',
       description:
-        "Whether you're a startup or an enterprise, Neuros scales with you. Experience robust analytics solutions that adapt to your growth.",
+        "Whether you're a startup or an enterprise, VTECHNOCLOUD scales with you. Experience robust analytics solutions that adapt to your growth.",
     },
 
     {
@@ -90,7 +90,7 @@ export const MainContentSection = ({
       icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-1.svg',
       title: 'Business Development',
       description:
-        "Receive automated insights and recommendations tailored to your business needs. Let Neuros's AI guide your strategies.",
+        "Receive automated insights and recommendations tailored to your business needs. Let VTECHNOCLOUD's AI guide your strategies.",
     },
 
     {

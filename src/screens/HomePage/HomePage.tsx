@@ -130,7 +130,7 @@ const CompanyStats = () => (
   <section className="flex flex-col items-center gap-5 pt-8 pb-[45px] px-8 relative self-stretch w-full flex-[0_0_auto] bg-white">
     <div className="flex-col items-center gap-5 flex max-w-[1204px] relative w-full flex-[0_0_auto]">
       <p className="relative self-stretch mt-[-1.00px] opacity-80 font-body-base-regular text-[#4b5162] text-center">
-        160,000+ customers in over 120 countries grow their businesses with Neuros
+        160,000+ customers in over 120 countries grow their businesses with VTECHNOCLOUD
       </p>
       
       <img

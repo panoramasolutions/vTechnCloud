@@ -98,7 +98,7 @@ export const FaqSectionDesktop = ({faqRef}:any) => {
             <div className="flex pl-0 pr-6 py-0 self-stretch w-full items-center gap-2 relative flex-[0_0_auto]">
               <div className="flex-1 mt-[-1.00px] relative opacity-80 font-body-base-regular font-[number:var(--body-base-regular-font-weight)] text-[#4b5162] text-[length:var(--body-base-regular-font-size)] tracking-[var(--body-base-regular-letter-spacing)] leading-[var(--body-base-regular-line-height)] [font-style:var(--body-base-regular-font-style)]">
                 Explore our frequently asked questions to learn more about
-                Neuros’s features, security, integration capabilities, and
+                VTECHNOCLOUD’s features, security, integration capabilities, and
                 more
               </div>
             </div>

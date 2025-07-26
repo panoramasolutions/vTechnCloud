@@ -11,21 +11,21 @@ export const ValuePropositionSection = ({aboutusRef}): JSX.Element => {
   //     iconMobile: "https://c.animaapp.com/mda992oeRqV2dl/img/vector-1.svg",
   //     title: "AI-Driven Forecasts",
   //     description:
-  //       "Harness the unmatched power of artificial intelligence with Neuros. Dive deep into predictive analytics, anticipate market trends, and stay steps ahead of your competition. Make informed decisions backed by data-driven insights",
+  //       "Harness the unmatched power of artificial intelligence with VTECHNOCLOUD. Dive deep into predictive analytics, anticipate market trends, and stay steps ahead of your competition. Make informed decisions backed by data-driven insights",
   //   },
   //   {
   //     iconDesktop: "https://c.animaapp.com/md8qit7hIsaPL2/img/vector-5.svg",
   //     iconMobile: "https://c.animaapp.com/mda992oeRqV2dl/img/vector-30.svg",
   //     title: "Connect & Streamline",
   //     description:
-  //       "Neuros seamlessly integrates with your favorite business tools, CRMs, and platforms. Experience a unified analytics platform that bridges the gaps in your data ecosystem, ensuring you have a holistic view of your operations",
+  //       "VTECHNOCLOUD seamlessly integrates with your favorite business tools, CRMs, and platforms. Experience a unified analytics platform that bridges the gaps in your data ecosystem, ensuring you have a holistic view of your operations",
   //   },
   //   {
   //     iconDesktop: "https://c.animaapp.com/md8qit7hIsaPL2/img/vector-2.svg",
   //     iconMobile: "https://c.animaapp.com/mda992oeRqV2dl/img/vector-4.svg",
   //     title: "Instant Insights",
   //     description:
-  //       "In the fast-paced world of business, every second counts. Neuros processes data in real-time, ensuring you're always working with the most up-to-date information. React to changes as they happen and pivot your strategies instantly.",
+  //       "In the fast-paced world of business, every second counts. VTECHNOCLOUD processes data in real-time, ensuring you're always working with the most up-to-date information. React to changes as they happen and pivot your strategies instantly.",
   //   },
   // ];
 

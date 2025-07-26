@@ -63,14 +63,14 @@ import {
     },
     {
       quote:
-        "Financial forecasting is complex, but Neuros has simplified it for us. Its predictive analytics are second to none.",
+        "Financial forecasting is complex, but VTECHNOCLOUD has simplified it for us. Its predictive analytics are second to none.",
       name: "Ethan West",
       title: "Chief Financial Officer",
       avatarSrc: "https://c.animaapp.com/mde1q96l7iAMhF/img/image-ava.svg",
     },
     {
       quote:
-        "The seamless integrations and customizable dashboards make Neuros an indispensable tool for our business.",
+        "The seamless integrations and customizable dashboards make VTECHNOCLOUD an indispensable tool for our business.",
       name: "Riley Dawson",
       title: "CTO",
       avatarSrc: "https://c.animaapp.com/mde1q96l7iAMhF/img/image-ava.svg",

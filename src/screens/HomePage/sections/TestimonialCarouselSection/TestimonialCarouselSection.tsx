@@ -117,7 +117,7 @@ export const TestimonialCarouselSection = ({ testimonialRef }: TestimonialSectio
     <section 
       ref={testimonialRef}
       className={`
-        flex flex-col items-center gap-12 py-32 px-8 w-full bg-white
+        flex flex-col items-center gap-12 py-12 px-8 w-full bg-white
         ${isDesktop ? 'shadow-md relative z-[2]' : ''}
       `}
     >
@@ -126,16 +126,16 @@ export const TestimonialCarouselSection = ({ testimonialRef }: TestimonialSectio
           <div className="flex flex-col items-center gap-4 w-full">
             <h2 className={`
               w-full text-center font-heading-desktop-h2-bold
-              ${isDesktop ? 'text-[39px] text-[#343844]' : 'text-[#1c1f25]'}
+              ${isDesktop ? 'text-[39px] text-[#343844]' : 'text-[#1c1f25] font-weight-bold'}
             `}>
-              {isDesktop ? 'Client Success Stories' : 'The Neuros Experience'}
+             Client Success Stories
             </h2>
             <p className={`
               max-w-[820px] w-full text-center opacity-80 font-body-base-regular
               ${isDesktop ? 'text-[#343844] px-5' : 'text-[#4b5162]'}
             `}>
-              At {isDesktop ? 'vTechnoCloud' : 'Neuros'}, we pride ourselves on delivering top-notch
-              {isDesktop ? ' technology goals' : ' AI-driven business analytics'}. But don't just take our word for it. Hear what
+              At vTechnoCloud, we pride ourselves on delivering top-notch
+              technology goals. But don't just take our word for it. Hear what
               our satisfied users have to say.
             </p>
           </div>

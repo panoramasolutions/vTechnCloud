@@ -82,9 +82,9 @@ export const FaqSection = ({ faqRef }: FaqSectionProps): JSX.Element => {
       className="
         flex flex-col items-center
         gap-[60px]
-        pt-32 pb-28 px-8
+        pt-12 pb-20 px-8
         sm:pt-32 sm:pb-28 sm:px-8
-        relative w-full bg-white
+        relative w-full 
         mb-[-146.22px]
       "
     >

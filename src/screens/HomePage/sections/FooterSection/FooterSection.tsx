@@ -87,7 +87,7 @@ export const FooterSection = (): JSX.Element => {
   const footerCategoriesMobile = [
     {
       title: "About VTECHNOCLOUD",
-      links: ["info@vtechnocloud.com", "+1 (469) 427-0751",],
+      links: ["Address:","VTECHNOCLOUD ","SOLUTIONS ","INC.","1550 WATERS RIDGE", "DR BLDG1", "STE 300 LEWISVILLE, TX 75057","Email:","info@vtechnocloud.com","Phone:", "+1 (469) 427-0751",],
     },
     {
       title: "Resources",

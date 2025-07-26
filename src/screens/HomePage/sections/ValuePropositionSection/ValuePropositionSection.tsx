@@ -3,34 +3,54 @@ import { Badge } from "../../../../components/ui/badge";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
 
-export const ValuePropositionSection = (): JSX.Element => {
+export const ValuePropositionSection = ({aboutusRef}): JSX.Element => {
   // Responsive feature cards data
-  const featureCards = [
+  // const featureCards = [
+  //   {
+  //     iconDesktop: "https://c.animaapp.com/md8qit7hIsaPL2/img/vector-1.svg",
+  //     iconMobile: "https://c.animaapp.com/mda992oeRqV2dl/img/vector-1.svg",
+  //     title: "AI-Driven Forecasts",
+  //     description:
+  //       "Harness the unmatched power of artificial intelligence with Neuros. Dive deep into predictive analytics, anticipate market trends, and stay steps ahead of your competition. Make informed decisions backed by data-driven insights",
+  //   },
+  //   {
+  //     iconDesktop: "https://c.animaapp.com/md8qit7hIsaPL2/img/vector-5.svg",
+  //     iconMobile: "https://c.animaapp.com/mda992oeRqV2dl/img/vector-30.svg",
+  //     title: "Connect & Streamline",
+  //     description:
+  //       "Neuros seamlessly integrates with your favorite business tools, CRMs, and platforms. Experience a unified analytics platform that bridges the gaps in your data ecosystem, ensuring you have a holistic view of your operations",
+  //   },
+  //   {
+  //     iconDesktop: "https://c.animaapp.com/md8qit7hIsaPL2/img/vector-2.svg",
+  //     iconMobile: "https://c.animaapp.com/mda992oeRqV2dl/img/vector-4.svg",
+  //     title: "Instant Insights",
+  //     description:
+  //       "In the fast-paced world of business, every second counts. Neuros processes data in real-time, ensuring you're always working with the most up-to-date information. React to changes as they happen and pivot your strategies instantly.",
+  //   },
+  // ];
+
+    const featureCards = [
     {
-      iconDesktop: "https://c.animaapp.com/md8qit7hIsaPL2/img/vector-1.svg",
-      iconMobile: "https://c.animaapp.com/mda992oeRqV2dl/img/vector-1.svg",
-      title: "AI-Driven Forecasts",
+      icon: "https://c.animaapp.com/mdd04i9koSfWJV/img/vector-32.svg",
+      title: "Deep Industry Insight",
       description:
-        "Harness the unmatched power of artificial intelligence with Neuros. Dive deep into predictive analytics, anticipate market trends, and stay steps ahead of your competition. Make informed decisions backed by data-driven insights",
+        "We blend domain expertise with cutting-edge tech—AI, ML, and cybersecurity.",
     },
     {
-      iconDesktop: "https://c.animaapp.com/md8qit7hIsaPL2/img/vector-5.svg",
-      iconMobile: "https://c.animaapp.com/mda992oeRqV2dl/img/vector-30.svg",
-      title: "Connect & Streamline",
+      icon: "https://c.animaapp.com/mdd04i9koSfWJV/img/vector-45.svg",
+      title: "True Client Partnership",
       description:
-        "Neuros seamlessly integrates with your favorite business tools, CRMs, and platforms. Experience a unified analytics platform that bridges the gaps in your data ecosystem, ensuring you have a holistic view of your operations",
+        "We work as an extension of your team to solve real-world business challenges.",
     },
     {
-      iconDesktop: "https://c.animaapp.com/md8qit7hIsaPL2/img/vector-2.svg",
-      iconMobile: "https://c.animaapp.com/mda992oeRqV2dl/img/vector-4.svg",
-      title: "Instant Insights",
+      icon: "https://c.animaapp.com/mdd04i9koSfWJV/img/vector-36.svg",
+      title: "Future-Ready Approach",
       description:
-        "In the fast-paced world of business, every second counts. Neuros processes data in real-time, ensuring you're always working with the most up-to-date information. React to changes as they happen and pivot your strategies instantly.",
+        "24/7 monitoring, predictive maintenance, and roadmaps designed for growth.",
     },
   ];
-
   return (
-    <section className="flex flex-col items-center gap-[60px] pt-32 pb-28 px-8 sm:pt-32 sm:pb-28 sm:px-8 px-5 py-[60px] relative self-stretch w-full flex-[0_0_auto] bg-white">
+    <section ref={aboutusRef} className="flex flex-col items-center gap-[60px] pt-12 pb-12 px-8 sm:pt-32 sm:pb-12 sm:px-8 px-5 py-[45px] relative self-stretch w-full flex-[0_0_auto] bg-white">
       <div className="flex flex-col max-w-[1204px] items-center gap-[60px] relative w-full flex-[0_0_auto]">
         {/* Header section */}
         <div className="max-w-[520px] items-center gap-8 w-full flex flex-col relative">
@@ -54,7 +74,7 @@ export const ValuePropositionSection = (): JSX.Element => {
                 />
               </div>
               <span className="font-body-base-medium font-[number:var(--body-base-medium-font-weight)] text-[#4b5162] text-[length:var(--body-base-medium-font-size)] tracking-[var(--body-base-medium-letter-spacing)] leading-[var(--body-base-medium-line-height)] [font-style:var(--body-base-medium-font-style)]">
-                Our strategies
+               About us
               </span>
             </Badge>
 
@@ -64,31 +84,16 @@ export const ValuePropositionSection = (): JSX.Element => {
               sm:font-heading-desktop-h2-bold sm:text-[length:var(--heading-desktop-h2-bold-font-size)] sm:leading-[var(--heading-desktop-h2-bold-line-height)]
               font-heading-mobile-h2-bold text-[length:var(--heading-mobile-h2-bold-font-size)] leading-[var(--heading-mobile-h2-bold-line-height)] sm:font-heading-desktop-h2-bold sm:text-[length:var(--heading-desktop-h2-bold-font-size)] sm:leading-[var(--heading-desktop-h2-bold-line-height)]
             ">
-              Improve your Continuous Design Data workflow
+             Your Strategic Tech Partner
             </h2>
 
             <p className="max-w-[820px] w-full opacity-80 font-body-base-regular font-[number:var(--body-base-regular-font-weight)] text-[#4b5162] text-[length:var(--body-base-regular-font-size)] text-center tracking-[var(--body-base-regular-letter-spacing)] leading-[var(--body-base-regular-line-height)] [font-style:var(--body-base-regular-font-style)] px-5">
-              Specify helps you gain control of your design system across teams
-              and products.
+             At VTechnoCloud, we blend deep technical expertise with forward-looking vision to help businesses thrive in the digital era. With a rich history in delivering AI-driven, cloud-first, and data-centric platforms, we specialize in bespoke solutions that are robust, scalable, and secure.
             </p>
           </div>
 
           {/* CTA buttons */}
-          <div className="flex items-start gap-3">
-            <Button className="px-5 py-3 bg-[#387ff5] rounded-xl h-auto">
-              <span className="font-button-base-bold font-[number:var(--button-base-bold-font-weight)] text-white text-[length:var(--button-base-bold-font-size)] tracking-[var(--button-base-bold-letter-spacing)] leading-[var(--button-base-bold-line-height)] [font-style:var(--button-base-bold-font-style)] px-2">
-                Get a demo
-              </span>
-            </Button>
-            <Button
-              variant="outline"
-              className="px-5 py-3 bg-white rounded-xl h-auto border-[#b6d0fb] backdrop-blur-[6px]"
-            >
-              <span className="font-button-base-bold font-[number:var(--button-base-bold-font-weight)] text-[#4b5162] text-[length:var(--button-base-bold-font-size)] tracking-[var(--button-base-bold-letter-spacing)] leading-[var(--button-base-bold-line-height)] [font-style:var(--button-base-bold-font-style)] px-2">
-                Research
-              </span>
-            </Button>
-          </div>
+       
         </div>
 
         {/* Feature cards section */}
@@ -107,13 +112,13 @@ export const ValuePropositionSection = (): JSX.Element => {
                         <img
                           className="absolute w-5 h-5 top-0.5 left-0.5 sm:block hidden"
                           alt="Feature icon"
-                          src={card.iconDesktop}
+                          src={card.icon}
                         />
                         {/* Mobile icon */}
                         <img
                           className="absolute w-5 h-5 top-0.5 left-0.5 sm:hidden block"
                           alt="Feature icon"
-                          src={card.iconMobile}
+                          src={card.icon}
                         />
                       </div>
                     </div>

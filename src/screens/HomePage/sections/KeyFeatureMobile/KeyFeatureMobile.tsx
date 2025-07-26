@@ -73,68 +73,36 @@ import { Card, CardContent, CardFooter } from "../../../../components/ui/card";
   const solutionCards = [
     {
       icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-3.svg',
-      title: 'Cloud Strategy & Consulting',
+      title: 'Secure by Design',
       description:
-        'From total visioning to tactical cloud roadmaps, cost modeling, and vendor-neutral governance.',
+        'Cybersecurity is at the core of everything we buil d. With zero-trust frameworks, continuous monitoring, and compliance-ready architectures, your systems stay protected—now and in the future.',
     },
     {
       icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-6.svg',
-      title: 'Data Engineering',
+      title: 'Smart Cloud Engineering',
       description:
         "We offer an intuitive interface that's easy to navigate, ensuring you spend less time figuring things out and more time analyzing.",
     },
     {
       icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-5.svg',
-      title: 'Full-Stack Development',
+      title: 'Data-Driven Decisions',
       description:
         "Whether you're a startup or an enterprise, Neuros scales with you. Experience robust analytics solutions that adapt to your growth.",
     },
 
     {
       icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-6.svg',
-      title: 'Python Expert',
+      title: 'Automation & Integration',
       description:
         'Develop robust, scalable, and secure backend systems, automate business tasks, and build APIs using industry-best Python practices',
     },
 
-    {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-6.svg',
-      title: 'AI/ML',
-      description:
-        'Deploy cutting-edge AI/ML solutions to automate decision-making, detect patterns, and enhance user experience with predictive insights',
-    },
-    {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-1.svg',
-      title: 'Business Intelligence(Power BI)',
-      description:
-        'Leverage Power BI dashboards and reports to gain visual insights, monitor KPIs, and drive smarter business strategies',
-    },
-
-    {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1.svg',
-      title: 'Automation & DevOps',
-      description:
-        'Streamline delivery pipelines, cut errors, and embrace agility with full-stack CI/CD and IaC.',
-    },
-
-    {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-1.svg',
-      title: 'Business Development',
-      description:
-        "Receive automated insights and recommendations tailored to your business needs. Let Neuros's AI guide your strategies.",
-    },
-
-    {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-2.svg',
-      title: 'Networking & Infrastructure',
-      description:
-        'Architect resilient networks—wired, wireless, hybrid—designed for performance and security.',
-    },
+   
   ];
 
-export const SolutionOverviewSection = ({ourServicesRef}): JSX.Element => {
+export const KeyFeatureMobile = ({keyFeaturesRef}): JSX.Element => {
   return (
-    <section className="flex flex-col items-center gap-[60px] py-12 px-5 sm:px-8 w-full bg-white" ref={ourServicesRef}>
+    <section className="flex flex-col items-center gap-[60px] py-12 px-5 sm:px-8 w-full bg-white" ref={keyFeaturesRef}>
       <div className="flex flex-col max-w-[1204px] items-center gap-[60px] w-full">
         {/* Header */}
         <header className="flex flex-col max-w-[800px] items-center gap-8 w-full">
@@ -158,12 +126,12 @@ export const SolutionOverviewSection = ({ourServicesRef}): JSX.Element => {
                 />
               </div>
               <span className="font-body-base-medium text-[#4b5162]">
-                What we do
+                Key Features and Capabilities
               </span>
             </Badge>
 
             <h2 className="font-heading-desktop-h2-bold text-[#1c1f25] text-center w-full">
-              Our Services
+             What sets our solutions apart—and pushes your business forward.
             </h2>
 
           
@@ -200,7 +168,7 @@ export const SolutionOverviewSection = ({ourServicesRef}): JSX.Element => {
             
           </div>
           {/* Mobile: grid */}
-          <div className="grid sm:hidden grid-cols-1 gap-8 w-full pb-8">
+          <div className="grid sm:hidden grid-cols-1 gap-8 w-full pb-12">
             {solutionCards.map((card, index) => (
               <Card
                 key={index}

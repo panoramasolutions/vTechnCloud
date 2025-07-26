@@ -27,30 +27,36 @@ export const TrialOfferSection = (): JSX.Element => {
       icon: <CreditCardIcon className="w-6 h-6 text-white sm:text-inherit" />,
       iconSrc:
         "https://c.animaapp.com/mda992oeRqV2dl/img/icon-credit-card-cursor-click.svg",
-      title: "Instant Access",
-      description:
-        "Begin exploring Neuros's full suite of features immediately",
+     title: "Let's Talk Goals",
+      description: 'We dig deep to get your business + tech aligned.',
     },
     {
       icon: <ShieldIcon className="w-6 h-6 text-white sm:text-inherit" />,
       iconSrc: "https://c.animaapp.com/mda992oeRqV2dl/img/vector-3.svg",
-      title: "No Commitments",
-      description: "No credit card required, and you can cancel anytime",
+     title: 'Plan Like Pros',
+      description: 'We map out what works—and what scales.',
     },
     {
       icon: <GlobeIcon className="w-6 h-6 text-white sm:text-inherit" />,
       iconSrc:
         "https://c.animaapp.com/mda992oeRqV2dl/img/icon-world--transaction--transfer.svg",
-      title: "Dedicated Support",
-      description:
-        "Our team is here to assist you every step of the way during your trial.",
+       title: 'Make It Happen',
+      description: 'From idea to impact, fast.',
     },
+
+     {title: 'Keep Getting Better',
+      description: "We don't stop. We fine-tune and future-proof.",
+     icon: <GlobeIcon className="w-6 h-6 text-white sm:text-inherit" />,
+      iconSrc:
+        "https://c.animaapp.com/mda992oeRqV2dl/img/icon-world--transaction--transfer.svg",}
   ];
+
+
 
   // Desktop version (width > 810px)
   if (isDesktop) {
     return (
-      <section className="flex flex-col items-center gap-[60px] px-8 py-20 sm:py-20 sm:px-8 px-5 py-[60px] w-full bg-white">
+      <section className="flex flex-col items-center gap-[60px] px-8 py-12 sm:py-20 sm:px-8 px-5 py-[60px] w-full bg-white">
         <Card className="flex flex-col items-start gap-2 p-[60px] sm:p-[60px] pt-8 pb-[60px] px-8 bg-[#387ff5] rounded-[32px] max-w-[1204px] w-full border-none relative overflow-visible">
           {/* Desktop background */}
           <img
@@ -66,14 +72,14 @@ export const TrialOfferSection = (): JSX.Element => {
           />
 
           <CardContent className="flex flex-wrap items-start gap-[40px] w-full p-0">
-            <div className="flex flex-col min-w-[360px] items-start gap-10 flex-1 grow">
+            <div className="flex flex-col  items-start gap-10 flex-1 grow">
               <h1 className="
                 self-stretch
                 font-heading-desktop-h1-bold font-[number:var(--heading-desktop-h1-bold-font-weight)] text-white text-[length:var(--heading-desktop-h1-bold-font-size)] tracking-[var(--heading-desktop-h1-bold-letter-spacing)] leading-[var(--heading-desktop-h1-bold-line-height)] [font-style:var(--heading-desktop-h1-bold-font-style)]
                 sm:font-heading-desktop-h1-bold sm:text-[length:var(--heading-desktop-h1-bold-font-size)] sm:leading-[var(--heading-desktop-h1-bold-line-height)]
                 font-heading-mobile-h1-bold text-[length:var(--heading-mobile-h1-bold-font-size)] leading-[var(--heading-mobile-h1-bold-line-height)] sm:font-heading-desktop-h1-bold sm:text-[length:var(--heading-desktop-h1-bold-font-size)] sm:leading-[var(--heading-desktop-h1-bold-line-height)]
               ">
-                Experience the Future of Business Analytics with Neuros
+               How we work
               </h1>
 
               <Button
@@ -93,7 +99,7 @@ export const TrialOfferSection = (): JSX.Element => {
               </Button>
             </div>
 
-            <div className="flex flex-col min-w-[360px] items-start gap-5 flex-1 grow">
+            <div className="flex flex-col  items-start gap-5 flex-1 grow">
               {featureCards.map((card, index) => (
                 <div
                   key={index}
@@ -136,12 +142,12 @@ export const TrialOfferSection = (): JSX.Element => {
 
   // Mobile version (width <= 810px)
   return (
-    <section className="flex flex-col items-center gap-[60px] py-[60px] w-full bg-white">
+    <section className="flex flex-col items-center gap-[60px] py-[30px] w-full bg-white">
       <Card className="flex-col items-start gap-2 pt-8 pb-[60px] px-8 bg-[#387ff5] max-w-[1204px] w-full border-none relative overflow-visible">
         <CardContent className="flex flex-wrap items-start gap-[40px] w-full p-0">
-          <div className="flex flex-col min-w-[360px] items-start gap-10 flex-1">
+          <div className="flex flex-col  items-start gap-10 flex-1">
             <h2 className="self-stretch font-heading-mobile-h1-bold font-[number:var(--heading-mobile-h1-bold-font-weight)] text-white text-[length:var(--heading-mobile-h1-bold-font-size)] tracking-[var(--heading-mobile-h1-bold-letter-spacing)] leading-[var(--heading-mobile-h1-bold-line-height)] [font-style:var(--heading-mobile-h1-bold-font-style)]">
-              Experience the Future of Business Analytics with Neuros
+          How we work
             </h2>
 
             <Button
@@ -155,7 +161,7 @@ export const TrialOfferSection = (): JSX.Element => {
             </Button>
           </div>
 
-          <div className="flex flex-col min-w-[360px] items-start gap-5 flex-1">
+          <div className="flex flex-col  items-start gap-5 flex-1">
             {featureCards.map((card, index) => (
               <Card
                 key={index}
@@ -183,12 +189,12 @@ export const TrialOfferSection = (): JSX.Element => {
         </CardContent>
 
         {/* Background decorative elements */}
-        <div className="absolute w-[420px] h-[708px] top-0 left-0 bg-[#387ff51a]" />
+        {/* <div className="absolute w-[420px] h-[708px] top-0 left-0 bg-[#387ff51a]" />
         <img
           className="absolute w-[420px] h-[308px] top-[400px] left-0"
           alt="Decorative background pattern"
           src="https://c.animaapp.com/mda992oeRqV2dl/img/mask-group.svg"
-        />
+        /> */}
       </Card>
     </section>
   );

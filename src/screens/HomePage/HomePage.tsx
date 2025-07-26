@@ -8,6 +8,7 @@ import { TestimonialCarouselSection } from "./sections/TestimonialCarouselSectio
 import { TrialOfferSection } from "./sections/TrialOfferSection";
 import { ValuePropositionSection } from "./sections/ValuePropositionSection";
 import { FaqSection } from "./sections/FaqSection";
+import { KeyFeatureMobile } from "./sections/KeyFeatureMobile";
 import company from "../../assets/Pic.png";
 import companies from "../../assets/Pict.png";
 
@@ -102,13 +103,14 @@ export const HomePage = (): JSX.Element => {
     <div className="flex flex-col w-full items-start relative bg-white">
       {commonSections.navigation}
       <main className="flex flex-col items-start pt-0 pb-[60px] px-0 relative self-stretch w-full flex-[0_0_auto] z-[1]">
-        <HeroSection />
+        <HeroSection   handleNavClick={handleNavClick}  />
         <CompanyStats />
-        <ValuePropositionSection />
+        <ValuePropositionSection  aboutusRef={refs.aboutUs} />
         {commonSections.testimonials}
         
         <TrialOfferSection />
-        <SolutionOverviewSection />
+        <KeyFeatureMobile  keyFeaturesRef={refs.keyFeatures}/>
+        <SolutionOverviewSection  ourServicesRef={refs.ourServices} />
         {commonSections.faq}
         
       </main>
@@ -125,7 +127,7 @@ export const HomePage = (): JSX.Element => {
 
 // Separate component for company stats section
 const CompanyStats = () => (
-  <section className="flex flex-col items-center gap-5 pt-10 pb-[60px] px-8 relative self-stretch w-full flex-[0_0_auto] bg-white">
+  <section className="flex flex-col items-center gap-5 pt-8 pb-[45px] px-8 relative self-stretch w-full flex-[0_0_auto] bg-white">
     <div className="flex-col items-center gap-5 flex max-w-[1204px] relative w-full flex-[0_0_auto]">
       <p className="relative self-stretch mt-[-1.00px] opacity-80 font-body-base-regular text-[#4b5162] text-center">
         160,000+ customers in over 120 countries grow their businesses with Neuros

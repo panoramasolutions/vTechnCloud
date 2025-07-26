@@ -126,7 +126,7 @@ export const TestimonialCarouselSection = ({ testimonialRef }: TestimonialSectio
           <div className="flex flex-col items-center gap-4 w-full">
             <h2 className={`
               w-full text-center font-heading-desktop-h2-bold
-              ${isDesktop ? 'text-[39px] text-[#343844]' : 'text-[#1c1f25] font-weight-bold'}
+              ${isDesktop ? 'text-[39px] text-[#343844] font-bold' : 'text-[#1c1f25] font-bold'}
             `}>
              Client Success Stories
             </h2>

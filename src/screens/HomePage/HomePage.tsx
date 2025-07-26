@@ -9,6 +9,10 @@ import { TrialOfferSection } from "./sections/TrialOfferSection";
 import { ValuePropositionSection } from "./sections/ValuePropositionSection";
 import { FaqSection } from "./sections/FaqSection";
 import { KeyFeatureMobile } from "./sections/KeyFeatureMobile";
+import { ChevronUp } from 'lucide-react';
+import  { Button } from "../../components/ui/button";
+
+
 import company from "../../assets/Pic.png";
 import companies from "../../assets/Pict.png";
 
@@ -17,6 +21,63 @@ interface WindowSize {
   width: number | undefined;
   height: number | undefined;
 }
+
+const ScrollToTop = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  // Show button when page is scrolled up to given distance
+  const toggleVisibility = () => {
+    if (window.pageYOffset > 300) {
+      setIsVisible(true);
+    } else {
+      setIsVisible(false);
+    }
+  };
+
+  // Set the top coordinate to 0
+  // Make scrolling smooth
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", toggleVisibility);
+    return () => {
+      window.removeEventListener("scroll", toggleVisibility);
+    };
+  }, []);
+
+  return (
+    <>
+      {isVisible && (
+        <Button
+          onClick={scrollToTop}
+          className="
+            fixed
+            bottom-10
+            right-4
+            z-50
+            p-4
+            rounded-full
+            bg-[#387ff5]
+            text-white
+            shadow-lg
+            hover:bg-[#2563eb]
+            transition-all
+            duration-300
+          "
+          aria-label="Scroll to top"
+        >
+          <ChevronUp className="h-12 w-12 " />
+          Move to top
+        </Button>
+      )}
+    </>
+  );
+};
 
 const useWindowSize = () => {
   const [windowSize, setWindowSize] = useState<WindowSize>({
@@ -121,6 +182,7 @@ export const HomePage = (): JSX.Element => {
   return (
     <div className="flex flex-col w-full min-h-screen bg-white">
       {isDesktop ? <DesktopLayout /> : <MobileLayout />}
+       <ScrollToTop />
     </div>
   );
 };

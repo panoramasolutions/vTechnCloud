@@ -162,7 +162,7 @@ export const SolutionOverviewSection = ({ourServicesRef}): JSX.Element => {
               </span>
             </Badge>
 
-            <h2 className="font-heading-desktop-h2-bold text-[#1c1f25] text-center w-full">
+            <h2 className="font-heading-desktop-h2-bold text-[#1c1f25] text-center w-full font-bold">
               Our Services
             </h2>
 

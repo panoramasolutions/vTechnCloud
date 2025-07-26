@@ -75,7 +75,7 @@ import { Card, CardContent, CardFooter } from "../../../../components/ui/card";
       icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-3.svg',
       title: 'Secure by Design',
       description:
-        'Cybersecurity is at the core of everything we buil d. With zero-trust frameworks, continuous monitoring, and compliance-ready architectures, your systems stay protected—now and in the future.',
+        'Cybersecurity is at the core of everything we build. With zero-trust frameworks, continuous monitoring, and compliance-ready architectures, your systems stay protected.',
     },
     {
       icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-6.svg',
@@ -141,7 +141,7 @@ export const KeyFeatureMobile = ({keyFeaturesRef}): JSX.Element => {
         {/* Cards */}
         <div className="w-full">
           {/* Desktop/Tablet: flex-wrap, Mobile: grid */}
-          <div className="hidden sm:flex flex-wrap justify-center gap-8 w-full pb-20 relative">
+          <div className="hidden sm:flex flex-wrap justify-center gap-8 w-full pb-24 relative">
             {solutionCards.map((card, index) => (
               <Card
                 key={`solution-card-${index}`}
@@ -174,7 +174,7 @@ export const KeyFeatureMobile = ({keyFeaturesRef}): JSX.Element => {
                 key={index}
                 className="flex flex-col min-h-[300px] border-[#b6bbcd] rounded-xl"
               >
-                <CardContent className="flex flex-col gap-4 p-8 items-center">
+                <CardContent className="flex flex-col gap-4 p-4 items-center">
                   <img
                     className="w-[65px] h-[65px] mt-[-5.09px] ml-[-30.55px]"
                     alt="Component"

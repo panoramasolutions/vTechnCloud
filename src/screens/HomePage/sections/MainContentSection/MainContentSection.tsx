@@ -170,7 +170,7 @@ export const MainContentSection = ({
                 Explore Our Services
               </Button>
 
-              <Button
+              {/* <Button
                 variant='outline'
                 className='flex items-center gap-2 px-5 py-3 rounded-xl border border-solid border-[#343844] backdrop-blur-[6px]'
                 onClick={() => setShowPopup(true)}
@@ -203,7 +203,7 @@ export const MainContentSection = ({
                     </div>
                   </div>
                 </div>
-              )}
+              )} */}
             </div>
           </div>
 
@@ -520,10 +520,10 @@ export const MainContentSection = ({
                 </h3>
 
                 <p className='opacity-80 font-body-base-regular text-[#343844]'>
-                  Cybersecurity is at the core of everything we buil d. With
+                  Cybersecurity is at the core of everything we build. With
                   zero-trust frameworks, continuous monitoring, and
                   compliance-ready architectures, your systems stay
-                  protected—now and in the future.
+                  protected
                 </p>
               </div>
 

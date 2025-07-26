@@ -133,83 +133,53 @@ export const FooterSection = (): JSX.Element => {
             </div>
           </div>
           <div className="flex flex-wrap gap-[32px] w-full items-start">
-            {isDesktop
-              ? footerColumnsDesktop.map((column, index) => (
+            {isDesktop ? (
+              footerColumnsDesktop.map((column, index) => (
+                <div
+                  key={`column-${index}`}
+                  className="flex flex-col justify-center gap-4 flex-1 grow items-start min-w-[180px]"
+                >
+                  <h3 className="font-heading-desktop-h6-bold text-[#343844] text-[length:var(--heading-desktop-h6-bold-font-size)] tracking-[var(--heading-desktop-h6-bold-letter-spacing)] leading-[var(--heading-desktop-h6-bold-line-height)] font-bold">
+                    {column.title}
+                  </h3>
+                  <div className="flex flex-col items-start justify-center gap-2">
+                    {column.links.map((link, linkIndex) => (
+                      <span
+                        key={`link-${linkIndex}`}
+                        className={`font-button-base-medium text-[#343844] tracking-[var(--button-base-medium-letter-spacing)] leading-[var(--button-base-medium-line-height)] inline-flex gap-2 text-[16px]`}
+                      >
+                        {link.icon}{"  "} {link.text}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ))
+            ) : (
+              <div className="grid grid-cols-2 gap-[32px] w-full">
+                {footerColumnsDesktop.map((column, index) => (
                   <div
-                    key={`column-${index}`}
-                    className="flex flex-col min-w-40 justify-center gap-4 flex-1 grow items-start"
+                    key={`column-mobile-${index}`}
+                    className="flex flex-col justify-start gap-4 flex-1 grow items-start min-w-[140px]"
                   >
-                    <h3 className="font-heading-desktop-h6-bold text-[#343844] text-[length:var(--heading-desktop-h6-bold-font-size)] tracking-[var(--heading-desktop-h6-bold-letter-spacing)] leading-[var(--heading-desktop-h6-bold-line-height)] font-bold">
+                    <h3 className="font-heading-desktop-h6-bold text-[#343844] text-[14px] tracking-[var(--heading-desktop-h6-bold-letter-spacing)] leading-[var(--heading-desktop-h6-bold-line-height)] font-bold">
                       {column.title}
                     </h3>
                     <div className="flex flex-col items-start justify-center gap-2">
                       {column.links.map((link, linkIndex) => (
-                          <span className="font-button-base-medium text-[#343844] text-[length:var(--button-base-medium-font-size)] tracking-[var(--button-base-medium-letter-spacing)] leading-[var(--button-base-medium-line-height)] inline-flex gap-2">
-                            {link.icon}{"  "} {link.text}
-                          </span>
-                       
-                      ))}
-                    </div>
-                  </div>
-                ))
-              : (
-                <>
-                  {footerCategoriesMobile.map((category, index) => (
-                    <div
-                      key={`category-${index}`}
-                      className="flex-col min-w-40 justify-center gap-4 flex-1 grow flex items-start relative"
-                    >
-                      <div className="inline-flex items-center justify-center gap-2 relative flex-[0_0_auto]">
-                        <h6 className="relative w-fit mt-[-1.00px] font-heading-desktop-h6-bold font-[number:var(--heading-desktop-h6-bold-font-weight)] text-[#343844] text-[length:var(--heading-desktop-h6-bold-font-size)] tracking-[var(--heading-desktop-h6-bold-letter-spacing)] leading-[var(--heading-desktop-h6-bold-line-height)] whitespace-nowrap [font-style:var(--heading-desktop-h6-bold-font-style)]">
-                          {category.title}
-                        </h6>
-                      </div>
-                      <div className="inline-flex flex-col items-start justify-center gap-2 relative flex-[0_0_auto]">
-                        {category.links.map((link, linkIndex) => (
-                          <div
-                            key={`link-${linkIndex}`}
-                            className="items-start inline-flex relative flex-[0_0_auto]"
-                          >
-                            <div className="inline-flex items-center gap-1 relative flex-[0_0_auto]">
-                              <div className="inline-flex items-start relative flex-[0_0_auto]">
-                                <button className="relative w-fit mt-[-1.00px] font-button-base-medium font-[number:var(--button-base-medium-font-weight)] text-[#4b5162] text-[length:var(--button-base-medium-font-size)] text-center tracking-[var(--button-base-medium-letter-spacing)] leading-[var(--button-base-medium-line-height)] whitespace-nowrap [font-style:var(--button-base-medium-font-style)]">
-                                  {link}
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-                  ))}
-                  {/* Connect section with social icons */}
-                  <div className="flex-col min-w-40 justify-center gap-4 flex-1 grow flex items-start relative">
-                    <div className="inline-flex items-center justify-center gap-2 relative flex-[0_0_auto]">
-                      <h6 className="relative w-fit mt-[-1.00px] font-heading-desktop-h6-bold font-[number:var(--heading-desktop-h6-bold-font-weight)] text-[#343844] text-[length:var(--heading-desktop-h6-bold-font-size)] tracking-[var(--heading-desktop-h6-bold-letter-spacing)] leading-[var(--heading-desktop-h6-bold-line-height)] whitespace-nowrap [font-style:var(--heading-desktop-h6-bold-font-style)]">
-                        Connect
-                      </h6>
-                    </div>
-                    <div className="inline-flex flex-col items-start justify-center gap-2 relative flex-[0_0_auto]">
-                      {socialLinksMobile.map((social, index) => (
-                        <div
-                          key={`social-${index}`}
-                          className="items-start inline-flex relative flex-[0_0_auto]"
+                        <span
+                          key={`link-mobile-${linkIndex}`}
+                          className="font-button-base-medium text-[#343844] tracking-[var(--button-base-medium-letter-spacing)] leading-[var(--button-base-medium-line-height)] inline-flex gap-2 text-[10px]"
                         >
-                          <div className="inline-flex items-center gap-1 relative flex-[0_0_auto]">
-                            {social.icon}
-                            <div className="inline-flex items-start relative flex-[0_0_auto]">
-                              <button className="relative w-fit mt-[-1.00px] font-button-base-medium font-[number:var(--button-base-medium-font-weight)] text-[#4b5162] text-[length:var(--button-base-medium-font-size)] text-center tracking-[var(--button-base-medium-letter-spacing)] leading-[var(--button-base-medium-line-height)] whitespace-nowrap [font-style:var(--button-base-medium-font-style)]">
-                                {social.name}
-                              </button>
-                            </div>
-                          </div>
-                        </div>
+                          {link.icon}{"  "} {link.text}
+                        </span>
                       ))}
                     </div>
                   </div>
-                </>
-              )
-            }
+                ))}
+              </div>
+            )}
+             
+            
           </div>
         </div>
         <Separator className="w-full h-px" />

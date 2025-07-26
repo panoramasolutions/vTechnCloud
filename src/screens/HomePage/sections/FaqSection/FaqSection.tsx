@@ -85,7 +85,7 @@ export const FaqSection = ({ faqRef }: FaqSectionProps): JSX.Element => {
         pt-12 pb-20 px-8
         sm:pt-32 sm:pb-28 sm:px-8
         relative w-full 
-        mb-[-146.22px]
+        mb-[-120px]
       "
     >
       <div className="flex flex-wrap items-start gap-[48px] max-w-[1204px] w-full">

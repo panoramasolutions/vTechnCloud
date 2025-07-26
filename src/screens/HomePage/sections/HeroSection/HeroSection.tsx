@@ -69,7 +69,7 @@ export const HeroSection = ({ handleNavClick,}): JSX.Element => {
                  Explore Our Services
                 </span>
               </Button>
-              <Button
+              {/* <Button
                 className="items-center justify-center gap-2 px-5 py-3 bg-[#ffffff1a] rounded-xl overflow-hidden border border-solid border-[#b6bbcd] backdrop-blur-[6px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(6px)_brightness(100%)] inline-flex relative flex-[0_0_auto]"
                 variant="outline"
                   onClick={() => setShowPopup(true)}
@@ -102,14 +102,14 @@ export const HeroSection = ({ handleNavClick,}): JSX.Element => {
                                   </div>
                                 </div>
                               </div>
-                            )}
+                            )} */}
             </div>
             {/* Mobile */}
             <div className="sm:hidden flex flex-col items-start gap-3 w-full">
               <Button className="w-full py-3 bg-[#387ff5] rounded-xl font-button-base-bold font-[number:var(--button-base-bold-font-weight)] text-white text-[length:var(--button-base-bold-font-size)] tracking-[var(--button-base-bold-letter-spacing)] leading-[var(--button-base-bold-line-height)] [font-style:var(--button-base-bold-font-style)]"  onClick={() => handleNavClick('Our Services')} >
                 Explore Our Services
               </Button>
-              <Button
+              {/* <Button
                 variant="outline"
                 className="w-full py-3 bg-[#ffffff1a] rounded-xl border-[#b6bbcd] backdrop-blur-[6px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(6px)_brightness(100%)] flex items-center justify-center gap-2"
                   onClick={() => setShowPopup(true)}  
@@ -142,7 +142,7 @@ export const HeroSection = ({ handleNavClick,}): JSX.Element => {
                                   </div>
                                 </div>
                               </div>
-                            )}
+                            )} */}
             </div>
           </div>
         </div>

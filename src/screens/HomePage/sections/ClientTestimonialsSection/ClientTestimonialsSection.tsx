@@ -84,7 +84,7 @@ export const ClientTestimonialsSection = ({testimonialRef}:any) => {
       <div className="flex flex-col max-w-[1204px] gap-12 w-full items-center">
         <div className="max-w-[800px] w-full flex flex-col items-center gap-8">
           <div className="flex flex-col items-center gap-4 w-full">
-            <h2 className=" text-[39px] w-full font-heading-desktop-h2-bold text-[#343844] text-center">
+            <h2 className=" text-[39px] w-full font-heading-desktop-h2-bold text-[#343844] text-center font-weight-bold">
               Client Success Stories
             </h2>
 

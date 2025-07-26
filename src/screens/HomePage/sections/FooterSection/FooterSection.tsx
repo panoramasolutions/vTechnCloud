@@ -38,7 +38,8 @@ export const FooterSection = (): JSX.Element => {
     {
       title: "Address",
       links: [
-        { text: "VTECHNOCLOUD SOLUTIONS INC.1550 WATERS RIDGE DR BLDG1 STE 300 LEWISVILLE, TX 75057", url: "#" },
+        { text: "VTECHNOCLOUD SOLUTIONS INC", url: "#" },
+                { text: "1550 WATERS RIDGE DR BLDG1 STE 300 LEWISVILLE, TX 75057", url: "#" },
         { text: "E-Mail: info@vtechnocloud.com", url: "#" },
         { text: "Phone: ‪+1 (469) 427-0751", url: "#" },
       ],
@@ -168,7 +169,7 @@ export const FooterSection = (): JSX.Element => {
                       {column.links.map((link, linkIndex) => (
                         <span
                           key={`link-mobile-${linkIndex}`}
-                          className="font-button-base-medium text-[#343844] tracking-[var(--button-base-medium-letter-spacing)] leading-[var(--button-base-medium-line-height)] inline-flex gap-2 text-[10px]"
+                          className="font-button-base-medium text-[#343844] tracking-[var(--button-base-medium-letter-spacing)] leading-[var(--button-base-medium-line-height)] inline-flex gap-2 text-[8px]"
                         >
                           {link.icon}{"  "} {link.text}
                         </span>

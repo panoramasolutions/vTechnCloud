@@ -44,19 +44,19 @@ export const MainContentSection = ({
       icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-3.svg',
       title: 'Cloud Strategy & Consulting',
       description:
-        'From total visioning to tactical cloud roadmaps, cost modeling, and vendor-neutral governance.',
+        'From total visioning to tactical cloud roadmaps, cost modeling, and vendor-neutral governance across AWS, Azure & GCP.',
     },
     {
       icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-6.svg',
       title: 'Data Engineering',
       description:
-        "We offer an intuitive interface that's easy to navigate, ensuring you spend less time figuring things out and more time analyzing.",
+        "We provide support for any models ranging from data analysis,data engineering to even data science.",
     },
     {
       icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-5.svg',
       title: 'Full-Stack Development',
       description:
-        "Whether you're a startup or an enterprise, VTECHNOCLOUD scales with you. Experience robust analytics solutions that adapt to your growth.",
+        "Build robust end to end solutions in any full stack frameworks like Java, Dotnet, MEAN, MERN etc.",
     },
 
     {
@@ -523,7 +523,7 @@ export const MainContentSection = ({
                   Cybersecurity is at the core of everything we build. With
                   zero-trust frameworks, continuous monitoring, and
                   compliance-ready architectures, your systems stay
-                  protected
+                  protected.
                 </p>
               </div>
 

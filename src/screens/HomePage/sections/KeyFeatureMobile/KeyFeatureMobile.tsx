@@ -172,7 +172,7 @@ export const KeyFeatureMobile = ({keyFeaturesRef}): JSX.Element => {
             {solutionCards.map((card, index) => (
               <Card
                 key={index}
-                className="flex flex-col min-h-[280px] border-[#b6bbcd] rounded-xl"
+                className="flex flex-col min-h-[300px] border-[#b6bbcd] rounded-xl"
               >
                 <CardContent className="flex flex-col gap-4 p-8 items-center">
                   <img

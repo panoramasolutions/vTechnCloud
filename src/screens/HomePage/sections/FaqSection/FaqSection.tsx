@@ -90,7 +90,7 @@ export const FaqSection = ({ faqRef }: FaqSectionProps): JSX.Element => {
     >
       <div className="flex flex-wrap items-start gap-[48px] max-w-[1204px] w-full">
         {/* Left column - Title and description */}
-        <div className="min-w-[360px] max-w-[476px] flex-1 flex flex-col items-start gap-6 pr-10">
+        <div className=" max-w-[476px] flex-1 flex flex-col items-start gap-6 pr-10">
           <div className="flex flex-col items-start gap-4 w-full">
             <Badge
               variant="outline"
@@ -117,7 +117,7 @@ export const FaqSection = ({ faqRef }: FaqSectionProps): JSX.Element => {
         </div>
 
         {/* Right column - FAQ accordion */}
-        <div className="min-w-[360px] flex-1 flex flex-col gap-6">
+        <div className=" flex-1 flex flex-col gap-6">
           <Accordion
             type="single"
             collapsible

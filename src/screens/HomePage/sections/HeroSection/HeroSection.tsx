@@ -95,7 +95,7 @@ export const HeroSection = ({ handleNavClick,}): JSX.Element => {
                                   <img
                                     src={whatsup}
                                     alt='Welcome'
-                                    className='w-[300px] h-[300px]'
+                                    className='w-[200px] h-[200px]'
                                   />
                                   <div className='text-xl font-bold text-[#343844]'>
                                     Whatsapp us on : +91 9096806080”
@@ -112,7 +112,7 @@ export const HeroSection = ({ handleNavClick,}): JSX.Element => {
               <Button
                 variant="outline"
                 className="w-full py-3 bg-[#ffffff1a] rounded-xl border-[#b6bbcd] backdrop-blur-[6px] backdrop-brightness-[100%] [-webkit-backdrop-filter:blur(6px)_brightness(100%)] flex items-center justify-center gap-2"
-                  onClick={() => setShowPopup(true)}
+                  onClick={() => setShowPopup(true)}  
               >
                 <img
                   className="w-[18px] h-[18px]"
@@ -135,7 +135,7 @@ export const HeroSection = ({ handleNavClick,}): JSX.Element => {
                                   <img
                                     src={whatsup}
                                     alt='Welcome'
-                                    className='w-[300px] h-[300px]'
+                                    className='w-[200px] h-[200px]'
                                   />
                                   <div className='text-xl font-bold text-[#343844]'>
                                     Whatsapp us on : +91 9096806080”

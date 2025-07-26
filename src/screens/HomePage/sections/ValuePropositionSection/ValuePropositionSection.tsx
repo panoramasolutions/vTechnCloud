@@ -102,7 +102,7 @@ export const ValuePropositionSection = ({aboutusRef}): JSX.Element => {
             {featureCards.map((card, index) => (
               <Card
                 key={index}
-                className="flex flex-col min-w-[360px] items-start justify-center flex-1 bg-white rounded-xl z-[2]"
+                className="flex flex-col  items-start justify-center flex-1 bg-white rounded-xl z-[2]"
               >
                 <CardContent className="flex flex-col gap-2 p-5 sm:p-5 px-5 py-4">
                   <div className="flex items-start gap-3 w-full">

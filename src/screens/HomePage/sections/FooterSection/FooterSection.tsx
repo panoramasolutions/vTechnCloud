@@ -120,7 +120,7 @@ export const FooterSection = (): JSX.Element => {
   ];
 
   return (
-    <section className="flex flex-col items-center justify-around gap-[50px] px-8 py-10 relative w-full bg-white">
+    <section className="flex flex-col items-center justify-around gap-[50px] px-8 py-10 relative w-full bg-[#8FBFF6]">
       <div className="flex flex-col max-w-[1204px] items-center w-full">
         <div className="flex flex-col items-start gap-[60px] pb-28 w-full">
           <div className="flex items-center gap-5 w-full">

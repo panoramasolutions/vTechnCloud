@@ -60,7 +60,7 @@ export const NavigationBarSection = ({ handleNavClick }: NavigationBarSectionPro
               setIsOpen(false);
             }}
           >
-            <span className="relative w-fit mt-[-1.00px] font-button-base-medium text-[#343844] whitespace-nowrap">
+            <span className="relative w-fit mt-[-1.00px] font-button-base-medium text-[#ffffff] whitespace-nowrap">
               {item.label}
             </span>
           </NavigationMenuTrigger>
@@ -70,7 +70,7 @@ export const NavigationBarSection = ({ handleNavClick }: NavigationBarSectionPro
   );
 
   return (
-    <header className="flex items-center justify-around gap-[167px] px-8 py-0 relative self-stretch w-full flex-[0_0_auto] z-[2] bg-white">
+    <header className="flex items-center justify-around gap-[167px] px-8 py-0 relative self-stretch w-full flex-[0_0_auto] z-[2] bg-[#041025]">
       <div className="flex flex-col max-w-[1204px] items-start relative flex-1 grow border-b border-[#d1d5e2]">
         <div className="flex items-center justify-between px-0 py-5 relative self-stretch w-full flex-[0_0_auto]">
           <div className="inline-flex items-center gap-10 relative self-stretch flex-[0_0_auto]">

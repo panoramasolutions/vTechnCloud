@@ -38,8 +38,29 @@ export const MainContentSection = ({
     },
   ];
 
+    const featureCard1s = [
+    {
+      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/vector-32.svg',
+      title: 'End-to-End Solutions',
+      description:
+        'We provide complete IT solutions tailored to your business—from strategy and architecture to development, deployment, and ongoing support. Our core focus areas include Cloud Technologies, DevSecOps, and scalable digital infrastructure.',
+    },
+    {
+      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/vector-45.svg',
+      title: 'Staffing',
+      description:'We help companies scale their teams with highly skilled professionals across various technologies. Whether its short-term project support or long-term resource needs, we provide reliable talent for all the major technologies.',
+    },
+   
+  ];
+
   // Data for the service cards
   const serviceCards = [
+    {
+      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-6.svg',
+      title: 'AI/ML',
+      description:
+        'Deploy cutting-edge AI/ML solutions to automate decision-making, detect patterns, and enhance user experience with predictive insights',
+    },
     {
       icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-3.svg',
       title: 'Cloud Strategy & Consulting',
@@ -66,12 +87,7 @@ export const MainContentSection = ({
         'Develop robust, scalable, and secure backend systems, automate business tasks, and build APIs using industry-best Python practices',
     },
 
-    {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-6.svg',
-      title: 'AI/ML',
-      description:
-        'Deploy cutting-edge AI/ML solutions to automate decision-making, detect patterns, and enhance user experience with predictive insights',
-    },
+    
     {
       icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-1.svg',
       title: 'Business Intelligence(Power BI)',
@@ -132,7 +148,7 @@ export const MainContentSection = ({
   return (
     <div className='flex flex-col items-start w-full relative z-[3]'>
       {/* Hero Section */}
-      <section className='flex flex-col items-center pt-28 pb-[34px] px-8 w-full bg-white'>
+      <section className='flex flex-col items-center pt-20 pb-[34px] px-8 w-full bg-white'>
         <div className='flex flex-col max-w-[1204px] items-center gap-[60px] w-full'>
           <div className='flex flex-col max-w-[860px] items-center gap-10 w-full'>
             <div className='flex flex-col items-center gap-5 w-full'>
@@ -411,8 +427,10 @@ export const MainContentSection = ({
         ref={ourServicesRef}
         className='flex flex-col items-center gap-[60px] pb-28 px-8 w-full bg-white'
       >
+        
         <div className='flex flex-col items-center gap-[60px] w-full max-w-[1204px]'>
           <div className='max-w-[800px] w-full flex flex-col items-center gap-8'>
+            
             <div className='flex flex-col items-center gap-4 w-full'>
               <Badge className='flex items-center gap-2 px-3 py-2 rounded-[20px] border border-solid border-[#b6bbcd] shadow-shadow-to-bot-neutral-1 bg-white'>
                 <div className='relative w-5 h-5'>
@@ -434,7 +452,41 @@ export const MainContentSection = ({
               </div>
             </div>
           </div>
+<div className='flex flex-col justify-center gap-10 w-full'>
+            <div className='flex flex-wrap flex-col items-start justify-center gap-6 w-full'>
+              {featureCard1s.map((card, index) => (
+                <Card
+                  key={index}
+                  className='flex-1 min-w-[360px] min-h-[150px] border border-solid border-[#387ff5] shadow-shadow-to-bot-primary-4 rounded-xl'
+                >
+                  <CardContent className='flex flex-col items-start gap-2 px-5 py-4'>
+                    <div className='flex items-start gap-3 w-full'>
+                      <div className='flex items-start gap-2'>
+                        <div className='relative w-6 h-6'>
+                          <img
+                            className='absolute w-5 h-5 top-0.5 left-0.5'
+                            alt='Vector'
+                            src={card.icon}
+                          />
+                        </div>
+                      </div>
+                      <h3
+                        className='flex-1 font-body-base-semibold text-[#343844] font-semibold'
+                        style={{ fontWeight: 600 }}
+                      >
+                        {card.title}
+                      </h3>
+                    </div>
+                    <p className='opacity-80 font-body-base-regular text-[#343844]'>
+                      {card.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
 
+            
+          </div>
           <div className='relative flex flex-wrap max-w-[1204px] items-start justify-center gap-8 pb-20 w-full'>
             <div className='flex flex-wrap items-start justify-center gap-8 flex-1'>
               {(showAllServices

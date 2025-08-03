@@ -148,12 +148,12 @@ export const TestimonialCarouselSection = ({ testimonialRef }: TestimonialSectio
             loop: isDesktop,
           }}
         >
-          <CarouselContent className={`${isDesktop ? 'flex items-center justify-center' : 'py-4 -ml-4'}`}>
+       <CarouselContent className={`${isDesktop ? '-ml-4' : 'py-4 -ml-4'}`}>
             {testimonials.map((testimonial, index) => (
               <CarouselItem
                 key={index}
                 className={`
-                  ${isDesktop ? 'basis-full md:basis-1/2 lg:basis-1/3 pl-0' : 'pl-4 md:basis-1/2 lg:basis-1/3'}
+                   ${isDesktop ? 'pl-4 md:basis-1/2 lg:basis-1/3' : 'pl-4 md:basis-1/2 lg:basis-1/3'}
                 `}
               >
                 <Card className={`

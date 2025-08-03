@@ -11,10 +11,11 @@ import { FaqSection } from "./sections/FaqSection";
 import { KeyFeatureMobile } from "./sections/KeyFeatureMobile";
 import { ChevronUp } from 'lucide-react';
 import  { Button } from "../../components/ui/button";
-
+import { Toaster } from "react-hot-toast";
 
 import company from "../../assets/Pic.png";
 import companies from "../../assets/Pict.png";
+import { ContactFormSection } from "./sections/ContactFormSection";
 
 
 interface WindowSize {
@@ -139,11 +140,13 @@ export const HomePage = (): JSX.Element => {
       <TestimonialCarouselSection testimonialRef={refs.testimonial} />
     ),
     faq: <FaqSection faqRef={refs.faq} />,
+    contactform: <ContactFormSection />,
   };
 
   // Desktop-specific layout
   const DesktopLayout = () => (
     <div className="flex flex-col w-full min-h-screen bg-white">
+          <Toaster position="top-right" />
       {commonSections.navigation}
       <MainContentSection
         keyFeaturesRef={refs.keyFeatures}
@@ -154,6 +157,7 @@ export const HomePage = (): JSX.Element => {
         handleNavClick={handleNavClick}
       />
       {commonSections.testimonials}
+      {commonSections.contactform}
       {commonSections.faq}
       {commonSections.footer}
     </div>
@@ -172,6 +176,7 @@ export const HomePage = (): JSX.Element => {
         <TrialOfferSection />
         <KeyFeatureMobile  keyFeaturesRef={refs.keyFeatures}/>
         <SolutionOverviewSection  ourServicesRef={refs.ourServices} />
+           {commonSections.contactform}
         {commonSections.faq}
         
       </main>

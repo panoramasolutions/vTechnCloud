@@ -72,6 +72,12 @@ import { Card, CardContent, CardFooter } from "../../../../components/ui/card";
 
   const solutionCards = [
     {
+      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-6.svg',
+      title: 'AI/ML',
+      description:
+        'Deploy cutting-edge AI/ML solutions to automate decision-making, detect patterns, and enhance user experience with predictive insights',
+    },
+    {
       icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-3.svg',
       title: 'Cloud Strategy & Consulting',
       description:
@@ -97,12 +103,7 @@ import { Card, CardContent, CardFooter } from "../../../../components/ui/card";
         'Develop robust, scalable, and secure backend systems, automate business tasks, and build APIs using industry-best Python practices',
     },
 
-    {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-6.svg',
-      title: 'AI/ML',
-      description:
-        'Deploy cutting-edge AI/ML solutions to automate decision-making, detect patterns, and enhance user experience with predictive insights',
-    },
+    
     {
       icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-1.svg',
       title: 'Business Intelligence(Power BI)',
@@ -130,6 +131,20 @@ import { Card, CardContent, CardFooter } from "../../../../components/ui/card";
       description:
         'Architect resilient networks—wired, wireless, hybrid—designed for performance and security.',
     },
+  ];
+  const featureCards = [
+    {
+      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/vector-32.svg',
+      title: 'End-to-End Solutions',
+      description:
+        'We provide complete IT solutions tailored to your business—from strategy and architecture to development, deployment, and ongoing support. Our core focus areas include Cloud Technologies, DevSecOps, and scalable digital infrastructure.',
+    },
+    {
+      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/vector-45.svg',
+      title: 'Staffing',
+      description:'We help companies scale their teams with highly skilled professionals across various technologies. Whether its short-term project support or long-term resource needs, we provide reliable talent for all the major technologies.',
+    },
+   
   ];
 
 export const SolutionOverviewSection = ({ourServicesRef}): JSX.Element => {
@@ -171,6 +186,43 @@ export const SolutionOverviewSection = ({ourServicesRef}): JSX.Element => {
         </header>
 
         {/* Cards */}
+         <div className="flex flex-col justify-center w-full">
+                  <div className="flex flex-col flex-wrap items-start justify-center gap-4 sm:gap-4 gap-[12px] w-full">
+                    {featureCards.map((card, index) => (
+                      <Card
+                        key={index}
+                        className="flex flex-col  items-start justify-center flex-1 bg-white rounded-xl z-[2]"
+                      >
+                        <CardContent className="flex flex-col gap-2 p-5 sm:p-5 px-5 py-4">
+                          <div className="flex items-start gap-3 w-full">
+                            <div className="inline-flex items-start gap-2">
+                              <div className="relative w-6 h-6">
+                                {/* Desktop/Tablet icon */}
+                                <img
+                                  className="absolute w-5 h-5 top-0.5 left-0.5 sm:block hidden"
+                                  alt="Feature icon"
+                                  src={card.icon}
+                                />
+                                {/* Mobile icon */}
+                                <img
+                                  className="absolute w-5 h-5 top-0.5 left-0.5 sm:hidden block"
+                                  alt="Feature icon"
+                                  src={card.icon}
+                                />
+                              </div>
+                            </div>
+                            <h3 className="flex-1 font-body-base-semibold font-[number:var(--body-base-semibold-font-weight)] text-[#1c1f25] text-[length:var(--body-base-semibold-font-size)] tracking-[var(--body-base-semibold-letter-spacing)] leading-[var(--body-base-semibold-line-height)] [font-style:var(--body-base-semibold-font-style)]">
+                              {card.title}
+                            </h3>
+                          </div>
+                          <p className="opacity-80 font-body-base-regular font-[number:var(--body-base-regular-font-weight)] text-[#4b5162] text-[length:var(--body-base-regular-font-size)] tracking-[var(--body-base-regular-letter-spacing)] leading-[var(--body-base-regular-line-height)] [font-style:var(--body-base-regular-font-style)]">
+                            {card.description}
+                          </p>
+                        </CardContent>
+                      </Card>
+                    ))}
+                  </div>
+                </div>
         <div className="w-full">
           {/* Desktop/Tablet: flex-wrap, Mobile: grid */}
           <div className="hidden sm:flex flex-wrap justify-center gap-8 w-full pb-20 relative">

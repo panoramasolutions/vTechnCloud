@@ -95,9 +95,9 @@ export const NavigationBarSection = ({ handleNavClick }: NavigationBarSectionPro
 
           {/* Mobile Navigation */}
           {isMobile && (
-            <Sheet open={isOpen} onOpenChange={setIsOpen}>
+            <Sheet open={isOpen} onOpenChange={setIsOpen} > 
               <SheetTrigger asChild>
-                <Button variant="ghost" size="icon" className="md:hidden">
+                <Button variant="ghost" size="icon" className="md:hidden  bg-white">
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
@@ -106,7 +106,7 @@ export const NavigationBarSection = ({ handleNavClick }: NavigationBarSectionPro
                   <Button
                     variant="ghost"
                     size="icon"
-                    className="absolute right-4 top-4"
+                    className="absolute right-4 top-4  bg-white"
                     onClick={() => setIsOpen(false)}
                   >
                     <X className="h-6 w-6" />

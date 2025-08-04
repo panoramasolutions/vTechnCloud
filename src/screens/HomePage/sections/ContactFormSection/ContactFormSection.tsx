@@ -7,6 +7,9 @@ import { toast } from "react-hot-toast";
 
 // Icons
 import { Mail, MapPin, Phone, MessageSquare } from 'lucide-react';
+import mail from '../../../../assets/mail.png';
+import phone from '../../../../assets/phone.png';
+import office from '../../../../assets/office.png';
 
 interface FormData {
   firstName: string;
@@ -77,68 +80,70 @@ export const ContactFormSection = (): JSX.Element => {
 
   const contactInfo = [
     {
-      icon: <MessageSquare className="w-4 h-4 text-[#667085]" />,
-      title: "Chat to sales",
-      description: "Speak to our friendly team.",
-      contact: "sales@vtechnocloud.com",
+      icon: <img src={mail} alt="Mail" className="w-10 h-10" />,
+      title: "Email",
+      description: "Our friendly team is here to help.",
+      contact: "info@vtechnocloud.com",
       type: "email"
     },
+
+   
     {
-      icon: <Mail className="w-4 h-4 text-[#667085]" />,
-      title: "Chat to support",
-      description: "We're here to help.",
-      contact: "support@vtechnocloud.com",
-      type: "email"
+      icon: <img src={phone} alt="Mail" className="w-10 h-10" />,
+      title: "Phone",
+      description: "Mon-Fri from 8am to 5pm.",
+      contact: "+1 (469) 427-0050",
+      type: "phone"
     },
-    {
-      icon: <MapPin className="w-4 h-4 text-[#667085]" />,
-      title: "Visit us",
-      description: "Visit our office HQ.",
-      contact: "100 Smith Street\nCollingwood VIC 3066 AU",
+     {
+      icon: <img src={office} alt="Mail" className="w-10 h-10" />,
+      title: "Office",
+      description: "Come say hello at our office HQ.",
+      contact: "VTECHNOCLOUD SOLUTIONS INC. \n1550 WATERS RIDGE DR BLDG1 STE 300 \n LEWISVILLE, TX 75057",
       type: "address"
     },
-    {
-      icon: <Phone className="w-4 h-4 text-[#667085]" />,
-      title: "Call us",
-      description: "Mon-Fri from 8am to 5pm.",
-      contact: "+1 (555) 000-0000",
-      type: "phone"
-    }
   ];
 
   return (
-    <section className="flex flex-col items-center w-full py-28 px-8 bg-white">
-      <div className="flex flex-col items-center gap-16 max-w-[1204px] w-full">
+    <section className="flex flex-col items-center w-full py-8 px-8 bg-white"  style={{
+               
+                  paddingTop: window.innerWidth < 640 ? "0rem" : "2rem",
+                }}>
+      <div className="flex flex-col items-center gap-32 max-w-[1204px] w-full">
         {/* Header Section */}
-        <div className="flex flex-col items-center gap-8 max-w-[800px] w-full">
-          <div className="flex flex-col items-center gap-4 w-full">
-            <Badge className="flex items-center gap-2 px-3 py-2 rounded-[20px] border border-[#b6bbcd] shadow-shadow-to-bot-neutral-1 bg-transparent">
-              <div className="relative w-5 h-5">
-                <MessageSquare className="absolute w-[18px] h-[17px] top-0.5 left-px text-[#343844]" />
-              </div>
-              <span className="font-body-base-medium text-[#343844]">
-                Get in Touch
-              </span>
-            </Badge>
-
-            <h2 className="font-heading-desktop-h2-bold text-[#343844] text-center">
-              Ready to Transform Your Business?
-            </h2>
-
-            <p className="opacity-80 font-body-base-regular text-[#343844] text-center max-w-[600px]">
-              Let's discuss how vTechnoCloud can accelerate your digital transformation journey. Our experts are ready to help you unlock new possibilities.
-            </p>
-          </div>
-        </div>
+       
 
         {/* Main Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 w-full items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2  w-full items-start
+        "
+         style={{
+               
+                  gap: window.innerWidth < 640 ? "3rem" : "6rem",
+                  fontWeight: "bold",
+                }}
+        >
           {/* Left Side - Contact Form */}
           <div className="flex flex-col gap-8">
             <div className="flex flex-col gap-6">
-              <h3 className="font-heading-desktop-h3-bold text-[#343844]">
-                Send us a message
-              </h3>
+              <h1 className="font-heading-desktop-h1-bold text-[#343844] text-[40px] sm:text-[24px] "
+              style={{
+               
+                   color: "#343844",
+                  fontSize: window.innerWidth < 640 ? "16px" : "40px",
+                  fontWeight: "bold",
+                  fontFamily: "inherit"
+                }}>
+                Get in touch
+              </h1>
+              <h2 className="font-heading-desktop-h2-bold text-[#343844] text-[20px]  sm:text-[16px] "
+              style={{
+               
+                  fontSize: window.innerWidth < 640 ? "14px" : "20px",
+                   fontWeight: "400",
+                }}
+              >
+            We’d love to hear from you. Please fill out this form.
+              </h2>
               
               <form onSubmit={handleSubmit} className="flex flex-col gap-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -249,15 +254,37 @@ export const ContactFormSection = (): JSX.Element => {
 
           {/* Right Side - Contact Information */}
           <div className="flex flex-col gap-8">
-            <div className="flex flex-col gap-6">
+             <div className="flex flex-col gap-6">
+              <h1
+                style={{
+                  color: "#343844",
+                  fontSize: window.innerWidth < 640 ? "16px" : "40px",
+                  fontWeight: "bold",
+                  fontFamily: "inherit"
+                }}
+              >
+                We’d love to hear from you
+              </h1>
+              <h2 className="font-heading-desktop-h3-bold text-[#343844]  text-[20px]"
+               style={{
+               
+                  fontSize: window.innerWidth < 640 ? "14px" : "20px",
+                   fontWeight: "400",
+                }}
+              
+              >
+             Need something cleared up? Here are our most frequently asked questions.
+              </h2>
+              </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               {contactInfo.map((info, index) => (
-                <div key={index} className="flex items-start gap-4">
-                  <div className="w-6 h-6 mt-1 flex-shrink-0">
-                    <div className="w-6 h-6 bg-[#f9fafb] rounded-lg flex items-center justify-center border border-[#eaecf0]">
+                <div key={index} className="flex items-start gap-4 flex-col">
+                  <div className="w-10 h-10 mt-1 flex-shrink-0">
+                    <div className="w-10 h-10 bg-[#f9fafb] rounded-lg flex items-center justify-center border border-[#eaecf0]">
                       {info.icon}
                     </div>
                   </div>
-                  <div className="flex flex-col gap-1">
+                  <div className="flex flex-col gap-6">
                     <h4 className="font-body-base-semibold text-[#101828]">
                       {info.title}
                     </h4>
@@ -275,7 +302,7 @@ export const ContactFormSection = (): JSX.Element => {
                       </a>
                     )}
                     {info.type === 'address' && (
-                      <address className="font-body-base-semibold text-[#387ff5] not-italic whitespace-pre-line">
+                      <address className="font-body-base-semibold text-[#387ff5] not-italic whitespace-pre-line text-[12px]">
                         {info.contact}
                       </address>
                     )}

@@ -7,6 +7,17 @@ import bannervideo from '../../../../assets/bannervideo.mp4';
 import company from '../../../../assets/Pic.png';
 import companies from '../../../../assets/Pict.png';
 import whatsup from '../../../../assets/w.jpg';
+import be from '../../../../assets/be.jpg';
+import dail from '../../../../assets/dailmler.png';
+import download from '../../../../assets/download.jpg';
+import dtcc from '../../../../assets/dtcc.png';
+import gat from '../../../../assets/gat.png';
+import ge from '../../../../assets/ge.png';
+import ver from '../../../../assets/ver.png';
+import visa from '../../../../assets/visa.jpg';
+import wu from '../../../../assets/wu.png';
+import w from '../../../../assets/w.jpg';
+
 
 export const MainContentSection = ({
   keyFeaturesRef,
@@ -74,7 +85,7 @@ export const MainContentSection = ({
         "We provide support for any models ranging from data analysis,data engineering to even data science.",
     },
     {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-5.svg',
+      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-3.svg',
       title: 'Full-Stack Development',
       description:
         "Build robust end to end solutions in any full stack frameworks like Java, Dotnet, MEAN, MERN etc.",
@@ -96,7 +107,7 @@ export const MainContentSection = ({
     },
 
     {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1.svg',
+      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-3.svg',
       title: 'Automation & DevOps',
       description:
         'Streamline delivery pipelines, cut errors, and embrace agility with full-stack CI/CD and IaC.',
@@ -148,7 +159,7 @@ export const MainContentSection = ({
   return (
     <div className='flex flex-col items-start w-full relative z-[3]'>
       {/* Hero Section */}
-      <section className='flex flex-col items-center pt-20 pb-[34px] px-8 w-full bg-white'>
+      <section className='flex flex-col items-center pt-12 pb-[34px] px-8 w-full bg-white'>
         <div className='flex flex-col max-w-[1204px] items-center gap-[60px] w-full'>
           <div className='flex flex-col max-w-[860px] items-center gap-10 w-full'>
             <div className='flex flex-col items-center gap-5 w-full'>
@@ -243,16 +254,23 @@ export const MainContentSection = ({
             500+ customers in over 20 countries grow their businesses with
             vTechnoCloud
           </p>
-
-          <img className='min-w-[1240px] w-full' alt='Logo' src={company} />
-          <img className='min-w-[1240px] w-full' alt='Logo' src={companies} />
-        </div>
+            <div className="grid grid-cols-4 gap-6 w-full justify-items-center">
+            <img className='' alt='Logo' src={wu} style={{ height: 60, width: 200, objectFit: 'contain' }} />
+            <img className='' alt='Logo' src={visa} style={{ height: 60, width: 200, objectFit: 'contain' }} />
+            <img className='' alt='Logo' src={ver} style={{ height: 60, width: 200, objectFit: 'contain' }} />
+            <img className='' alt='Logo' src={ge} style={{ height: 60, width: 200, objectFit: 'contain' }} />
+            <img className='' alt='Logo' src={gat} style={{ height: 60, width: 200, objectFit: 'contain' }} />
+            <img className='' alt='Logo' src={dtcc} style={{ height: 60, width: 200, objectFit: 'contain' }} />
+            <img className='' alt='Logo' src={dail} style={{ height: 60, width: 200, objectFit: 'contain' }} />
+            <img className='' alt='Logo' src={be} style={{ height: 60, width: 200, objectFit: 'contain' }} />
+            </div>
+          </div>
       </section>
 
       {/* About Us Section */}
       <section
         ref={aboutusRef}
-        className='pt-[75px] pb-28 px-8 w-full flex flex-col items-center gap-[60px] bg-white  w-full'
+        className='pt-[60px] pb-20 px-8 w-full flex flex-col items-center gap-[60px] bg-white  w-full'
       >
         <div className='flex flex-col items-center gap-[60px] w-full max-w-[1204px]'>
           <div className='flex flex-col max-w-[520px] items-center gap-8 w-full'>
@@ -425,7 +443,7 @@ export const MainContentSection = ({
       {/* Our Services Section */}
       <section
         ref={ourServicesRef}
-        className='flex flex-col items-center gap-[60px] pb-28 px-8 w-full bg-white'
+        className='flex flex-col items-center gap-[60px] pb-4 px-8 w-full bg-white'
       >
         
         <div className='flex flex-col items-center gap-[60px] w-full max-w-[1204px]'>
@@ -487,7 +505,7 @@ export const MainContentSection = ({
 
             
           </div>
-          <div className='relative flex flex-wrap max-w-[1204px] items-start justify-center gap-8 pb-20 w-full'>
+          <div className='relative flex flex-wrap max-w-[1204px] items-start justify-center gap-8 pb-12 w-full'>
             <div className='flex flex-wrap items-start justify-center gap-8 flex-1'>
               {(showAllServices
                 ? serviceCards

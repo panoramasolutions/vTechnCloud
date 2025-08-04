@@ -84,7 +84,7 @@ import { Card, CardContent, CardFooter } from "../../../../components/ui/card";
         "We offer an intuitive interface that's easy to navigate, ensuring you spend less time figuring things out and more time analyzing.",
     },
     {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-5.svg',
+      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-3.svg',
       title: 'Data-Driven Decisions',
       description:
         "Whether you're a startup or an enterprise, VTECHNOCLOUD scales with you. Experience robust analytics solutions that adapt to your growth.",
@@ -102,7 +102,7 @@ import { Card, CardContent, CardFooter } from "../../../../components/ui/card";
 
 export const KeyFeatureMobile = ({keyFeaturesRef}): JSX.Element => {
   return (
-    <section className="flex flex-col items-center gap-[60px] py-12 px-5 sm:px-8 w-full bg-white" ref={keyFeaturesRef}>
+    <section className="flex flex-col items-center gap-[60px] pt-12 pb-0 px-5 sm:px-8 w-full bg-white" ref={keyFeaturesRef}>
       <div className="flex flex-col max-w-[1204px] items-center gap-[60px] w-full">
         {/* Header */}
         <header className="flex flex-col max-w-[800px] items-center gap-8 w-full">

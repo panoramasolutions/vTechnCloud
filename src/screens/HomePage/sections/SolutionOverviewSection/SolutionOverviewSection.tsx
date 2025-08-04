@@ -90,7 +90,7 @@ import { Card, CardContent, CardFooter } from "../../../../components/ui/card";
         "We provide support for any models ranging from data analysis,data engineering to even data science."
     },
     {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-5.svg',
+      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-3.svg',
       title: 'Full-Stack Development',
       description:
         "Build robust end to end solutions in any full stack frameworks like Java, Dotnet, MEAN, MERN etc.",
@@ -112,7 +112,7 @@ import { Card, CardContent, CardFooter } from "../../../../components/ui/card";
     },
 
     {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1.svg',
+     icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-3.svg',
       title: 'Automation & DevOps',
       description:
         'Streamline delivery pipelines, cut errors, and embrace agility with full-stack CI/CD and IaC.',
@@ -149,7 +149,12 @@ import { Card, CardContent, CardFooter } from "../../../../components/ui/card";
 
 export const SolutionOverviewSection = ({ourServicesRef}): JSX.Element => {
   return (
-    <section className="flex flex-col items-center gap-[60px] py-12 px-5 sm:px-8 w-full bg-white" ref={ourServicesRef}>
+    <section className="flex flex-col items-center gap-[60px] py-12 px-5 sm:px-8 w-full bg-white" ref={ourServicesRef}
+    style={{
+      paddingTop: window.innerWidth < 640 ? "0rem" : "3rem",
+     
+    }}
+    >
       <div className="flex flex-col max-w-[1204px] items-center gap-[60px] w-full">
         {/* Header */}
         <header className="flex flex-col max-w-[800px] items-center gap-8 w-full">

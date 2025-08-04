@@ -212,40 +212,7 @@ export const MainContentSection = ({
                 Explore Our Services
               </Button>
 
-              {/* <Button
-                variant='outline'
-                className='flex items-center gap-2 px-5 py-3 rounded-xl border border-solid border-[#343844] backdrop-blur-[6px]'
-                onClick={() => setShowPopup(true)}
-              >
-                <img
-                  className='w-6 h-6'
-                  alt='L icon'
-                  src='https://c.animaapp.com/mdd04i9koSfWJV/img/l-icon-1.svg'
-                />
-                <span className='font-button-base-bold text-[#343844]'>
-                  Get a Free Strategy Call
-                </span>
-              </Button>
-              {showPopup && (
-                <div className='fixed inset-0 flex items-center justify-center bg-black bg-opacity-40 z-50'>
-                  <div className='bg-white rounded-xl p-8 flex flex-col items-center gap-4 shadow-lg relative'>
-                    <button
-                      className='absolute top-2 right-2 text-gray-500 hover:text-gray-700 w-8'
-                      onClick={() => setShowPopup(false)}
-                    >
-                      &times;
-                    </button>
-                    <img
-                      src={whatsup}
-                      alt='Welcome'
-                      className='w-[300px] h-[300px]'
-                    />
-                    <div className='text-xl font-bold text-[#343844]'>
-                      Whatsapp us on : +91 9096806080”
-                    </div>
-                  </div>
-                </div>
-              )} */}
+              
             </div>
           </div>
 
@@ -255,7 +222,7 @@ export const MainContentSection = ({
                 className='absolute w-full h-[556px]  object-cover'
                 src={bannervideo}
                 controls
-                poster='https://c.animaapp.com/mdd04i9koSfWJV/img/image-2.png'
+               
               />
             </div>
           </div>
@@ -497,23 +464,7 @@ export const MainContentSection = ({
               ))}
             </div>
           </div>
-          {/* Button and image always at the bottom after all cards */}
-          {/* <div className="flex flex-col w-full items-center justify-end gap-2 px-6 py-0 mt-8 relative">
-            <img
-              className="absolute w-full h-[263px] top-[-300px] left-0"
-              alt="Gradient mask"
-              src="https://c.animaapp.com/mdd04i9koSfWJV/img/gradient-mask.svg"
-            />
-            <Button
-              variant="outline"
-              className="px-5 py-3 rounded-xl border border-solid border-[#343844] backdrop-blur-[6px] z-10"
-              onClick={() => setShowAllServices(prev => !prev)}
-            >
-              <span className="font-button-small-bold text-[#343844]">
-                {showAllServices ? "Reduce applications" : "Explore more application"}
-              </span>
-            </Button>
-          </div> */}
+        
         </div>
       </section>
 

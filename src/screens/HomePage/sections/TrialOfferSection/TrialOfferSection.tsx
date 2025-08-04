@@ -8,6 +8,9 @@ import {
 import React from "react";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
+import l from '../../../../assets/l.png';
+import p from '../../../../assets/p.png';
+import m from '../../../../assets/m.png';
 
 // Responsive TrialOfferSection: uses window width to switch layouts
 export const TrialOfferSection = (): JSX.Element => {
@@ -26,20 +29,20 @@ export const TrialOfferSection = (): JSX.Element => {
     {
       icon: <CreditCardIcon className="w-6 h-6 text-white sm:text-inherit" />,
       iconSrc:
-        "https://c.animaapp.com/mda992oeRqV2dl/img/icon-credit-card-cursor-click.svg",
+       l,
      title: "Let's Talk Goals",
       description: 'We dig deep to get your business + tech aligned.',
     },
     {
       icon: <ShieldIcon className="w-6 h-6 text-white sm:text-inherit" />,
-      iconSrc: "https://c.animaapp.com/mda992oeRqV2dl/img/vector-3.svg",
+      iconSrc: p,
      title: 'Plan Like Pros',
       description: 'We map out what works—and what scales.',
     },
     {
       icon: <GlobeIcon className="w-6 h-6 text-white sm:text-inherit" />,
       iconSrc:
-        "https://c.animaapp.com/mda992oeRqV2dl/img/icon-world--transaction--transfer.svg",
+       m,
        title: 'Make It Happen',
       description: 'From idea to impact, fast.',
     },
@@ -47,8 +50,8 @@ export const TrialOfferSection = (): JSX.Element => {
      {title: 'Keep Getting Better',
       description: "We don't stop. We fine-tune and future-proof.",
      icon: <GlobeIcon className="w-6 h-6 text-white sm:text-inherit" />,
-      iconSrc:
-        "https://c.animaapp.com/mda992oeRqV2dl/img/icon-world--transaction--transfer.svg",}
+      iconSrc:m
+       }
   ];
 
 
@@ -58,18 +61,7 @@ export const TrialOfferSection = (): JSX.Element => {
     return (
       <section className="flex flex-col items-center gap-[60px] px-8 py-12 sm:py-20 sm:px-8 px-5 py-[60px] w-full bg-white">
         <Card className="flex flex-col items-start gap-2 p-[60px] sm:p-[60px] pt-8 pb-[60px] px-8 bg-[#387ff5] rounded-[32px] max-w-[1204px] w-full border-none relative overflow-visible">
-          {/* Desktop background */}
-          <img
-            className="absolute w-[746px] h-[424px] top-[232px] left-0 sm:block hidden"
-            alt="Mask group"
-            src="https://c.animaapp.com/md8qit7hIsaPL2/img/mask-group.svg"
-          />
-          {/* Mobile background */}
-          <img
-            className="absolute w-[420px] h-[308px] top-[400px] left-0 sm:hidden block"
-            alt="Decorative background pattern"
-            src="https://c.animaapp.com/mda992oeRqV2dl/img/mask-group.svg"
-          />
+        
 
           <CardContent className="flex flex-wrap items-start gap-[40px] w-full p-0">
             <div className="flex flex-col  items-start gap-10 flex-1 grow">
@@ -188,13 +180,7 @@ export const TrialOfferSection = (): JSX.Element => {
           </div>
         </CardContent>
 
-        {/* Background decorative elements */}
-        {/* <div className="absolute w-[420px] h-[708px] top-0 left-0 bg-[#387ff51a]" />
-        <img
-          className="absolute w-[420px] h-[308px] top-[400px] left-0"
-          alt="Decorative background pattern"
-          src="https://c.animaapp.com/mda992oeRqV2dl/img/mask-group.svg"
-        /> */}
+     
       </Card>
     </section>
   );

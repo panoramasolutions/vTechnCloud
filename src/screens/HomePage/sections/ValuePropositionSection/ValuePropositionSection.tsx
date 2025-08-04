@@ -5,33 +5,10 @@ import { Card, CardContent } from "../../../../components/ui/card";
 import deep from '../../../../assets/deep.png';
 import future from '../../../../assets/future.png';
 import tr from '../../../../assets/true.png';
+import ai from '../../../../assets/AI.png';
 
 export const ValuePropositionSection = ({aboutusRef}): JSX.Element => {
-  // Responsive feature cards data
-  // const featureCards = [
-  //   {
-  //     iconDesktop: "https://c.animaapp.com/md8qit7hIsaPL2/img/vector-1.svg",
-  //     iconMobile: "https://c.animaapp.com/mda992oeRqV2dl/img/vector-1.svg",
-  //     title: "AI-Driven Forecasts",
-  //     description:
-  //       "Harness the unmatched power of artificial intelligence with VTECHNOCLOUD. Dive deep into predictive analytics, anticipate market trends, and stay steps ahead of your competition. Make informed decisions backed by data-driven insights",
-  //   },
-  //   {
-  //     iconDesktop: "https://c.animaapp.com/md8qit7hIsaPL2/img/vector-5.svg",
-  //     iconMobile: "https://c.animaapp.com/mda992oeRqV2dl/img/vector-30.svg",
-  //     title: "Connect & Streamline",
-  //     description:
-  //       "VTECHNOCLOUD seamlessly integrates with your favorite business tools, CRMs, and platforms. Experience a unified analytics platform that bridges the gaps in your data ecosystem, ensuring you have a holistic view of your operations",
-  //   },
-  //   {
-  //     iconDesktop: "https://c.animaapp.com/md8qit7hIsaPL2/img/vector-2.svg",
-  //     iconMobile: "https://c.animaapp.com/mda992oeRqV2dl/img/vector-4.svg",
-  //     title: "Instant Insights",
-  //     description:
-  //       "In the fast-paced world of business, every second counts. VTECHNOCLOUD processes data in real-time, ensuring you're always working with the most up-to-date information. React to changes as they happen and pivot your strategies instantly.",
-  //   },
-  // ];
-
+ 
    const featureCards = [
      {
        icon: deep,
@@ -67,13 +44,13 @@ export const ValuePropositionSection = ({aboutusRef}): JSX.Element => {
                 <img
                   className="absolute w-[18px] h-[17px] top-0.5 left-px sm:block hidden"
                   alt="Vector"
-                  src="https://c.animaapp.com/md8qit7hIsaPL2/img/vector-18.svg"
+                  src={ai}
                 />
                 {/* Mobile icon */}
                 <img
                   className="absolute w-[18px] h-[17px] top-0.5 left-px sm:hidden block"
                   alt="Vector"
-                  src="https://c.animaapp.com/mda992oeRqV2dl/img/vector-2.svg"
+                  src={ai}
                 />
               </div>
               <span className="font-body-base-medium font-[number:var(--body-base-medium-font-weight)] text-[#4b5162] text-[length:var(--body-base-medium-font-size)] tracking-[var(--body-base-medium-letter-spacing)] leading-[var(--body-base-medium-line-height)] [font-style:var(--body-base-medium-font-style)]">

@@ -13,6 +13,8 @@ import {
   CarouselPrevious,
 } from "../../../../components/ui/carousel";
 
+import ava from '../../../../assets/ava.png';
+
 // Testimonial data for 
     const testimonials = [
     {
@@ -20,62 +22,62 @@ import {
         "Thanks to their cloud migration strategy, we reduced our infrastructure costs and scaled seamlessly—without any downtime",
       name: "Madison Cole",
       title: "Operations Lead",
-      avatarSrc: "https://c.animaapp.com/mde1q96l7iAMhF/img/image-ava.svg",
+      avatarSrc: ava,
     },
     {
       quote:"With their Power BI expertise, we now make faster, data-driven decisions—what used to take hours now takes minutes.",
       name: "Jackson Reed",
       title: "Marketing Manager",
-      avatarSrc: "https://c.animaapp.com/mde1q96l7iAMhF/img/image-ava.svg",
+      avatarSrc: ava,
     },
     {
       quote:
         "Their Python automation saved us hundreds of hours. Routine tasks that took days are now completed in just a few clicks.",
       name: "Avery Bennett",
       title: "CTO",
-      avatarSrc: "https://c.animaapp.com/mde1q96l7iAMhF/img/image-ava.svg",
+      avatarSrc: ava,
     },
     {
       quote:
         "The AI solution they built helped us understand customer behavior and boost retention by over 25%.",
       name: "Logan Brooks",
       title: "COO, Retail Chain",
-      avatarSrc: "https://c.animaapp.com/mde1q96l7iAMhF/img/image-ava.svg",
+      avatarSrc: ava,
     },
     {
       quote:
         "They modernized our legacy app into a sleek, high-performance platform—our users noticed the difference instantly",
       name: " Harper Sullivan",
       title: "CTO, FinTech startup",
-      avatarSrc: "https://c.animaapp.com/mde1q96l7iAMhF/img/image-ava.svg",
+      avatarSrc: ava,
     },
     {
       quote:
         "We sleep better knowing our backups are automated and disaster-ready. Their secured backup solution is rock solid.",
       name: "Mason Grant",
       title: "Operations Director",
-      avatarSrc: "https://c.animaapp.com/mde1q96l7iAMhF/img/image-ava.svg",
+      avatarSrc: ava,
     },
     {
       quote:
         "Real-time data integration changed how we operate. We now track shipments live and optimize routes on the go",
       name: "Chloe Hayes",
       title: "CTO",
-      avatarSrc: "https://c.animaapp.com/mde1q96l7iAMhF/img/image-ava.svg",
+      avatarSrc: ava,
     },
     {
       quote:
         "Financial forecasting is complex, but VTECHNOCLOUD has simplified it for us. Its predictive analytics are second to none.",
       name: "Ethan West",
       title: "Chief Financial Officer",
-      avatarSrc: "https://c.animaapp.com/mde1q96l7iAMhF/img/image-ava.svg",
+      avatarSrc: ava,
     },
     {
       quote:
         "The seamless integrations and customizable dashboards make VTECHNOCLOUD an indispensable tool for our business.",
       name: "Riley Dawson",
       title: "CTO",
-      avatarSrc: "https://c.animaapp.com/mde1q96l7iAMhF/img/image-ava.svg",
+      avatarSrc: ava,
     },
   ];
 interface WindowSize {

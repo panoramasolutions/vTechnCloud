@@ -2,6 +2,9 @@ import React from "react";
 import { Badge } from "../../../../components/ui/badge";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent } from "../../../../components/ui/card";
+import deep from '../../../../assets/deep.png';
+import future from '../../../../assets/future.png';
+import tr from '../../../../assets/true.png';
 
 export const ValuePropositionSection = ({aboutusRef}): JSX.Element => {
   // Responsive feature cards data
@@ -29,26 +32,26 @@ export const ValuePropositionSection = ({aboutusRef}): JSX.Element => {
   //   },
   // ];
 
-    const featureCards = [
-    {
-      icon: "https://c.animaapp.com/mdd04i9koSfWJV/img/vector-32.svg",
-      title: "Deep Industry Insight",
-      description:
-        "We blend domain expertise with cutting-edge tech—AI, ML, and cybersecurity.",
-    },
-    {
-      icon: "https://c.animaapp.com/mdd04i9koSfWJV/img/vector-45.svg",
-      title: "True Client Partnership",
-      description:
-        "We work as an extension of your team to solve real-world business challenges.",
-    },
-    {
-      icon: "https://c.animaapp.com/mdd04i9koSfWJV/img/vector-36.svg",
-      title: "Future-Ready Approach",
-      description:
-        "24/7 monitoring, predictive maintenance, and roadmaps designed for growth.",
-    },
-  ];
+   const featureCards = [
+     {
+       icon: deep,
+       title: 'Deep Industry Insight',
+       description:
+         'We blend domain expertise with cutting-edge tech—AI, ML, and cybersecurity.',
+     },
+     {
+       icon: tr,
+       title: 'True Client Partnership',
+       description:
+         'We work as an extension of your team to solve real-world business challenges.',
+     },
+     {
+       icon: future,
+       title: 'Future-Ready Approach',
+       description:
+         '24/7 monitoring, predictive maintenance, and roadmaps designed for growth.',
+     },
+   ];
   return (
     <section ref={aboutusRef} className="flex flex-col items-center gap-[60px] pt-12 pb-12 px-8 sm:pt-32 sm:pb-12 sm:px-8 px-5 py-[45px] relative self-stretch w-full flex-[0_0_auto] bg-white">
       <div className="flex flex-col max-w-[1204px] items-center gap-[60px] relative w-full flex-[0_0_auto]">

@@ -17,7 +17,22 @@ import ver from '../../../../assets/ver.png';
 import visa from '../../../../assets/visa.jpg';
 import wu from '../../../../assets/wu.png';
 import w from '../../../../assets/w.jpg';
-
+import ai from '../../../../assets/AI.png';
+import deep from '../../../../assets/deep.png';
+import future from '../../../../assets/future.png';
+import tr from '../../../../assets/true.png';
+import big from '../../../../assets/big.png';
+import mas from '../../../../assets/mas.png';
+import l from '../../../../assets/l.png';
+import p from '../../../../assets/p.png';
+import m from '../../../../assets/m.png';
+import secure from '../../../../assets/secure.png';
+import smart from '../../../../assets/smart.png';
+import data from '../../../../assets/data.png';
+import auto from '../../../../assets/auto.png';
+import one from '../../../../assets/1.png';
+import two from '../../../../assets/2.png';
+import three from '../../../../assets/3.png';
 
 export const MainContentSection = ({
   keyFeaturesRef,
@@ -30,98 +45,97 @@ export const MainContentSection = ({
   // Data for the "About Us" feature cards
   const featureCards = [
     {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/vector-32.svg',
+      icon: deep,
       title: 'Deep Industry Insight',
       description:
         'We blend domain expertise with cutting-edge tech—AI, ML, and cybersecurity.',
     },
     {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/vector-45.svg',
+      icon: tr,
       title: 'True Client Partnership',
       description:
         'We work as an extension of your team to solve real-world business challenges.',
     },
     {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/vector-36.svg',
+      icon: future,
       title: 'Future-Ready Approach',
       description:
         '24/7 monitoring, predictive maintenance, and roadmaps designed for growth.',
     },
   ];
 
-    const featureCard1s = [
+  const featureCard1s = [
     {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/vector-32.svg',
+      icon: deep,
       title: 'End-to-End Solutions',
       description:
         'We provide complete IT solutions tailored to your business—from strategy and architecture to development, deployment, and ongoing support. Our core focus areas include Cloud Technologies, DevSecOps, and scalable digital infrastructure.',
     },
     {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/vector-45.svg',
+      icon: future,
       title: 'Staffing',
-      description:'We help companies scale their teams with highly skilled professionals across various technologies. Whether its short-term project support or long-term resource needs, we provide reliable talent for all the major technologies.',
+      description:
+        'We help companies scale their teams with highly skilled professionals across various technologies. Whether its short-term project support or long-term resource needs, we provide reliable talent for all the major technologies.',
     },
-   
   ];
 
   // Data for the service cards
   const serviceCards = [
     {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-6.svg',
+      icon: one,
       title: 'AI/ML',
       description:
         'Deploy cutting-edge AI/ML solutions to automate decision-making, detect patterns, and enhance user experience with predictive insights',
     },
     {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-3.svg',
+      icon: two,
       title: 'Cloud Strategy & Consulting',
       description:
         'From total visioning to tactical cloud roadmaps, cost modeling, and vendor-neutral governance across AWS, Azure & GCP.',
     },
     {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-6.svg',
+      icon: three,
       title: 'Data Engineering',
       description:
-        "We provide support for any models ranging from data analysis,data engineering to even data science.",
+        'We provide support for any models ranging from data analysis,data engineering to even data science.',
     },
     {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-3.svg',
+      icon: three,
       title: 'Full-Stack Development',
       description:
-        "Build robust end to end solutions in any full stack frameworks like Java, Dotnet, MEAN, MERN etc.",
+        'Build robust end to end solutions in any full stack frameworks like Java, Dotnet, MEAN, MERN etc.',
     },
 
     {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-6.svg',
+      icon: one,
       title: 'Python Expert',
       description:
         'Develop robust, scalable, and secure backend systems, automate business tasks, and build APIs using industry-best Python practices',
     },
 
-    
     {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-1.svg',
+      icon: two,
       title: 'Business Intelligence(Power BI)',
       description:
         'Leverage Power BI dashboards and reports to gain visual insights, monitor KPIs, and drive smarter business strategies',
     },
 
     {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-3.svg',
+      icon: two,
       title: 'Automation & DevOps',
       description:
         'Streamline delivery pipelines, cut errors, and embrace agility with full-stack CI/CD and IaC.',
     },
 
     {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-1.svg',
+      icon: one,
       title: 'Business Development',
       description:
         "Receive automated insights and recommendations tailored to your business needs. Let VTECHNOCLOUD's AI guide your strategies.",
     },
 
     {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-2.svg',
+      icon: three,
       title: 'Networking & Infrastructure',
       description:
         'Architect resilient networks—wired, wireless, hybrid—designed for performance and security.',
@@ -131,21 +145,22 @@ export const MainContentSection = ({
   // Data for the "How We Work" steps
   const workSteps = [
     {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/icon-credit-card-cursor-click.svg',
+      icon: l,
       title: "Let's Talk Goals",
       description: 'We dig deep to get your business + tech aligned.',
     },
     {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/vector-19.svg',
+      icon: p,
       title: 'Plan Like Pros',
       description: 'We map out what works—and what scales.',
     },
     {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/icon-world--transaction--transfer.svg',
+      icon: m,
       title: 'Make It Happen',
       description: 'From idea to impact, fast.',
     },
     {
+      icon: m,
       title: 'Keep Getting Better',
       description: "We don't stop. We fine-tune and future-proof.",
     },
@@ -168,7 +183,7 @@ export const MainContentSection = ({
                   <img
                     className='absolute w-[18px] h-[17px] top-0.5 left-0'
                     alt='Vector'
-                    src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-25.svg'
+                    src={ai}
                   />
                 </div>
                 <span className='font-body-base-medium text-[#343844]'>
@@ -254,17 +269,57 @@ export const MainContentSection = ({
             500+ customers in over 20 countries grow their businesses with
             vTechnoCloud
           </p>
-            <div className="grid grid-cols-4 gap-6 w-full justify-items-center">
-            <img className='' alt='Logo' src={wu} style={{ height: 60, width: 200, objectFit: 'contain' }} />
-            <img className='' alt='Logo' src={visa} style={{ height: 60, width: 200, objectFit: 'contain' }} />
-            <img className='' alt='Logo' src={ver} style={{ height: 60, width: 200, objectFit: 'contain' }} />
-            <img className='' alt='Logo' src={ge} style={{ height: 60, width: 200, objectFit: 'contain' }} />
-            <img className='' alt='Logo' src={gat} style={{ height: 60, width: 200, objectFit: 'contain' }} />
-            <img className='' alt='Logo' src={dtcc} style={{ height: 60, width: 200, objectFit: 'contain' }} />
-            <img className='' alt='Logo' src={dail} style={{ height: 60, width: 200, objectFit: 'contain' }} />
-            <img className='' alt='Logo' src={be} style={{ height: 60, width: 200, objectFit: 'contain' }} />
-            </div>
+          <div className='grid grid-cols-4 gap-6 w-full justify-items-center'>
+            <img
+              className=''
+              alt='Logo'
+              src={wu}
+              style={{ height: 60, width: 200, objectFit: 'contain' }}
+            />
+            <img
+              className=''
+              alt='Logo'
+              src={visa}
+              style={{ height: 60, width: 200, objectFit: 'contain' }}
+            />
+            <img
+              className=''
+              alt='Logo'
+              src={ver}
+              style={{ height: 60, width: 200, objectFit: 'contain' }}
+            />
+            <img
+              className=''
+              alt='Logo'
+              src={ge}
+              style={{ height: 60, width: 200, objectFit: 'contain' }}
+            />
+            <img
+              className=''
+              alt='Logo'
+              src={gat}
+              style={{ height: 60, width: 200, objectFit: 'contain' }}
+            />
+            <img
+              className=''
+              alt='Logo'
+              src={dtcc}
+              style={{ height: 60, width: 200, objectFit: 'contain' }}
+            />
+            <img
+              className=''
+              alt='Logo'
+              src={dail}
+              style={{ height: 60, width: 200, objectFit: 'contain' }}
+            />
+            <img
+              className=''
+              alt='Logo'
+              src={be}
+              style={{ height: 60, width: 200, objectFit: 'contain' }}
+            />
           </div>
+        </div>
       </section>
 
       {/* About Us Section */}
@@ -280,7 +335,7 @@ export const MainContentSection = ({
                   <img
                     className='absolute w-[18px] h-[17px] top-0.5 left-px'
                     alt='Vector'
-                    src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-16.svg'
+                    src={ai}
                   />
                 </div>
                 <span className='font-body-base-medium text-[#343844]'>
@@ -341,99 +396,7 @@ export const MainContentSection = ({
 
             <div className='relative w-full h-[480px] rounded-3xl overflow-hidden border border-solid border-[#f5f6f9] bg-[linear-gradient(135deg,rgba(128,159,240,1)_0%,rgba(76,98,197,1)_100%)]'>
               <div className='w-full h-[480px] bg-[#6099f7] overflow-hidden'>
-                <div className='relative w-[1554px] h-[480px] left-[-89px]'>
-                  <img
-                    className='absolute w-[1526px] h-[341px] top-[23px] left-0'
-                    alt='Vector'
-                    src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-34.svg'
-                  />
-
-                  <img
-                    className='absolute w-[1204px] h-[480px] top-0 left-[89px]'
-                    alt='Grid'
-                    src='https://c.animaapp.com/mdd04i9koSfWJV/img/grid-3.svg'
-                  />
-
-                  <img
-                    className='absolute w-[1526px] h-[331px] top-[66px] left-7'
-                    alt='Vector'
-                    src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-37.svg'
-                  />
-
-                  <img
-                    className='absolute w-[1380px] h-[260px] top-[103px] left-[33px]'
-                    alt='Vector'
-                    src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-40.svg'
-                  />
-
-                  <img
-                    className='absolute w-2 h-2 top-[209px] left-[877px]'
-                    alt='Vector'
-                    src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-38.svg'
-                  />
-
-                  <img
-                    className='absolute w-2 h-2 top-[121px] left-[1001px]'
-                    alt='Vector'
-                    src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-42.svg'
-                  />
-
-                  <img
-                    className='absolute w-[15px] h-[15px] top-[129px] left-[1034px]'
-                    alt='Vector'
-                    src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-39.svg'
-                  />
-
-                  <img
-                    className='absolute w-[33px] h-[33px] top-[213px] left-[878px]'
-                    alt='Vector'
-                    src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-3.svg'
-                  />
-
-                  <img
-                    className='absolute w-[33px] h-[33px] top-[92px] left-[1003px]'
-                    alt='Vector'
-                    src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-4.svg'
-                  />
-
-                  <img
-                    className='absolute w-[33px] h-[33px] top-[265px] left-[304px]'
-                    alt='Vector'
-                    src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector.svg'
-                  />
-
-                  <img
-                    className='absolute w-3 h-[11px] top-[295px] left-[300px]'
-                    alt='Vector'
-                    src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-1.svg'
-                  />
-
-                  <img
-                    className='absolute w-3 h-[11px] top-[251px] left-[306px]'
-                    alt='Vector'
-                    src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-2.svg'
-                  />
-
-                  <img
-                    className='absolute w-[29px] h-[29px] top-[286px] left-[477px]'
-                    alt='Vector'
-                    src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-5.svg'
-                  />
-
-                  <img
-                    className='absolute w-3.5 h-3.5 top-[318px] left-[477px]'
-                    alt='Vector'
-                    src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-8.svg'
-                  />
-
-                  <img
-                    className='absolute w-[222px] h-[222px] top-[135px] left-[483px]'
-                    alt='Group'
-                    src='https://c.animaapp.com/mdd04i9koSfWJV/img/group.png'
-                  />
-
-                  <div className='w-[1204px] h-[480px] top-0 left-[89px] absolute bg-[#387ff51a]' />
-                </div>
+                <img src={big} />
               </div>
             </div>
           </div>
@@ -445,17 +408,15 @@ export const MainContentSection = ({
         ref={ourServicesRef}
         className='flex flex-col items-center gap-[60px] pb-4 px-8 w-full bg-white'
       >
-        
         <div className='flex flex-col items-center gap-[60px] w-full max-w-[1204px]'>
           <div className='max-w-[800px] w-full flex flex-col items-center gap-8'>
-            
             <div className='flex flex-col items-center gap-4 w-full'>
               <Badge className='flex items-center gap-2 px-3 py-2 rounded-[20px] border border-solid border-[#b6bbcd] shadow-shadow-to-bot-neutral-1 bg-white'>
                 <div className='relative w-5 h-5'>
                   <img
                     className='absolute w-[18px] h-[17px] top-0.5 left-px'
                     alt='Vector'
-                    src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-16.svg'
+                    src={ai}
                   />
                 </div>
                 <span className='font-body-base-medium text-[#343844]'>
@@ -470,7 +431,7 @@ export const MainContentSection = ({
               </div>
             </div>
           </div>
-<div className='flex flex-col justify-center gap-10 w-full'>
+          <div className='flex flex-col justify-center gap-10 w-full'>
             <div className='flex flex-wrap flex-col items-start justify-center gap-6 w-full'>
               {featureCard1s.map((card, index) => (
                 <Card
@@ -502,8 +463,6 @@ export const MainContentSection = ({
                 </Card>
               ))}
             </div>
-
-            
           </div>
           <div className='relative flex flex-wrap max-w-[1204px] items-start justify-center gap-8 pb-12 w-full'>
             <div className='flex flex-wrap items-start justify-center gap-8 flex-1'>
@@ -592,209 +551,19 @@ export const MainContentSection = ({
                 <p className='opacity-80 font-body-base-regular text-[#343844]'>
                   Cybersecurity is at the core of everything we build. With
                   zero-trust frameworks, continuous monitoring, and
-                  compliance-ready architectures, your systems stay
-                  protected.
+                  compliance-ready architectures, your systems stay protected.
                 </p>
               </div>
 
               <div className='flex flex-col min-w-[360px] items-center gap-2 flex-1'>
-                <div className='relative w-[524px] h-[341px]'>
-                  <div className='relative h-[341px]'>
-                    <div className='absolute w-[433px] h-[304px] top-0 left-[91px] rounded-2xl overflow-hidden'>
-                      <div className='relative h-[304px] bg-[#387ff5] overflow-hidden'>
-                        <div className='w-[805px] h-[402px] top-[-49px] absolute left-0'>
-                          <div className='absolute w-[191px] h-[191px] top-[106px] left-[120px]'>
-                            <div className='relative h-[191px] rounded-[95.27px]'>
-                              <div className='absolute w-[191px] h-[191px] top-0 left-0 bg-[#ffffff66] rounded-[95.27px] opacity-20' />
-                              <div className='absolute w-[103px] h-[103px] top-[42px] left-[42px] bg-[#171c2f] rounded-[51.3px] opacity-20' />
-                            </div>
-                          </div>
-
-                          <img
-                            className='absolute w-[433px] h-[304px] top-[49px] left-0'
-                            alt='Grid'
-                            src='https://c.animaapp.com/mdd04i9koSfWJV/img/grid-2.svg'
-                          />
-
-                          <div className='absolute w-[141px] h-[141px] top-[131px] left-[146px] backdrop-blur-[2.35px]'>
-                            <img
-                              className='absolute w-[120px] h-[120px] top-[7px] left-[13px]'
-                              alt='Vector'
-                              src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-21.svg'
-                            />
-                          </div>
-
-                          <div className='absolute w-8 h-8 top-[90px] left-[214px]'>
-                            <div className='relative h-8 rounded-[16.12px]'>
-                              <div className='absolute w-8 h-8 top-0 left-0 bg-[#ffffff66] rounded-[16.12px] opacity-20' />
-                              <div className='absolute w-[21px] h-[21px] top-[5px] left-[5px] bg-[#171c2f] rounded-[10.26px] opacity-20' />
-                              <div className='absolute w-2.5 h-2.5 top-[11px] left-[11px] bg-[#171c2f] rounded-[5.13px]' />
-                            </div>
-                          </div>
-
-                          <div className='absolute w-[402px] h-[402px] top-0 left-[402px]'>
-                            <div className='relative h-[402px] rounded-[201.1px]'>
-                              <div className='absolute w-[402px] h-[402px] top-0 left-0 bg-[#ffffff66] rounded-[201.1px] opacity-20' />
-                              <div className='absolute w-[217px] h-[217px] top-[89px] left-[89px] bg-[#171c2f] rounded-[108.28px] opacity-20' />
-                            </div>
-                          </div>
-
-                          <div className='w-[433px] h-[304px] top-[49px] left-0 absolute bg-[#387ff51a]' />
-
-                          <div className='absolute w-[76px] h-[76px] top-[213px] left-[93px]'>
-                            <div className='relative h-[76px] rounded-[37.82px]'>
-                              <div className='absolute w-[76px] h-[76px] top-0 left-0 bg-[#ffffff66] rounded-[37.82px] opacity-20' />
-                              <div className='absolute w-[41px] h-[41px] top-[17px] left-[17px] bg-[#171c2f] rounded-[20.36px] opacity-20' />
-                              <div className='absolute w-5 h-5 top-[27px] left-[27px] bg-[#171c2f] rounded-[10.18px]' />
-                            </div>
-                          </div>
-                        </div>
-
-                        <div className='absolute w-[206px] h-[206px] top-[149px] left-[-241px]'>
-                          <div className='relative h-[206px] rounded-[103.19px]'>
-                            <div className='absolute w-[206px] h-[206px] top-0 left-0 bg-[#ffffff66] rounded-[103.19px] opacity-20' />
-                            <div className='absolute w-[111px] h-[111px] top-[46px] left-[46px] bg-[#171c2f] rounded-[55.56px] opacity-20' />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div className='absolute w-56 h-52 top-[133px] left-0 bg-[#171c2f] rounded-xl overflow-hidden border border-solid border-[#e7f4ff] shadow-shadow-to-bot-neutral-2'>
-                      <div className='relative w-[155px] h-[163px] top-[21px] left-[35px]'>
-                        <img
-                          className='absolute w-px h-px top-1.5 left-0'
-                          alt='Your weekly activity'
-                        />
-
-                        <div className='absolute w-[92px] h-[5px] top-[42px] left-[31px] bg-[#f5f6f9] rounded' />
-
-                        <div className='absolute w-[154px] h-[76px] top-16 left-0'>
-                          <div className='w-[37px] left-0 absolute h-[76px] top-0'>
-                            <div className='inline-flex items-center gap-1 relative top-[62px] left-1.5'>
-                              <img
-                                className='relative w-[13px] h-[9px]'
-                                alt='Vector'
-                                src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-23.svg'
-                              />
-
-                              <div className="relative w-fit mt-[-1.00px] [font-family:'DM_Sans',Helvetica] font-bold text-[#f5f6f9] text-xs text-center tracking-[0] leading-[14.4px] whitespace-nowrap">
-                                4
-                              </div>
-                            </div>
-                          </div>
-
-                          <div className='w-[33px] left-[53px] absolute h-[76px] top-0'>
-                            <div className='left-[5px] inline-flex items-center gap-1 relative top-[62px]'>
-                              <img
-                                className='relative w-[13px] h-[9px]'
-                                alt='Vector'
-                                src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-23.svg'
-                              />
-
-                              <div className="relative w-fit mt-[-1.00px] [font-family:'DM_Sans',Helvetica] font-bold text-[#f5f6f9] text-xs text-center tracking-[0] leading-[14.4px] whitespace-nowrap">
-                                7
-                              </div>
-                            </div>
-                          </div>
-
-                          <div className='w-[52px] left-[102px] absolute h-[76px] top-0'>
-                            <div className='left-3.5 inline-flex items-center gap-1 relative top-[62px]'>
-                              <img
-                                className='relative w-[13px] h-[9px]'
-                                alt='Vector'
-                                src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-23.svg'
-                              />
-
-                              <div className="relative w-fit mt-[-1.00px] [font-family:'DM_Sans',Helvetica] font-bold text-[#f5f6f9] text-xs text-center tracking-[0] leading-[14.4px] whitespace-nowrap">
-                                2
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div className='absolute w-[84px] h-[5px] top-[158px] left-[35px]'>
-                          <div className='absolute w-[57px] h-[5px] top-0 left-0 bg-[#f5f6f9] rounded' />
-                          <div className='absolute w-3.5 h-[5px] top-0 left-[70px] bg-[#f5f6f9] rounded' />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <img src={secure} />
               </div>
             </div>
 
             {/* Smart Cloud Engineering */}
             <div className='flex flex-wrap items-center gap-20 w-full justify-center bg-white'>
               <div className='flex flex-col min-w-[360px] items-center gap-2 flex-1'>
-                <div className='relative w-[522px] h-[339px]'>
-                  <div className='relative w-[586px] h-[337px] -top-2.5 -left-8'>
-                    <div className='absolute w-[425px] h-[298px] top-[39px] left-[79px] rounded-2xl overflow-hidden'>
-                      <div className='relative h-[299px] bg-[#387ff5] overflow-hidden'>
-                        <div className='w-[425px] h-[303px] top-0 absolute left-0'>
-                          <img
-                            className='absolute w-[425px] h-[298px] top-0 left-0'
-                            alt='Grid'
-                            src='https://c.animaapp.com/mdd04i9koSfWJV/img/grid-1.svg'
-                          />
-
-                          <div className='absolute w-32 h-32 top-[85px] left-[119px]'>
-                            <div className='h-32'>
-                              <div className='relative w-32 h-32 rounded-[64.16px]'>
-                                <div className='absolute w-32 h-32 top-0 left-0 bg-[#ffffff66] rounded-[64.16px] opacity-20' />
-                                <div className='absolute w-[93px] h-[94px] top-4 left-4 bg-[#171c2f] rounded-[46.69px/47.03px] opacity-20' />
-                                <div className='absolute w-[18px] h-[18px] top-[54px] left-[54px] bg-[#171c2f] rounded-[9.17px]' />
-                              </div>
-                            </div>
-                          </div>
-
-                          <div className='absolute w-[38px] h-[38px] top-[49px] left-[238px]'>
-                            <div className='relative h-[38px] rounded-[19.02px]'>
-                              <div className='absolute w-[38px] h-[38px] top-0 left-0 bg-[#ffffff66] rounded-[19.02px] opacity-20' />
-                              <div className='absolute w-6 h-6 top-1.5 left-1.5 bg-[#171c2f] rounded-[12.1px] opacity-20' />
-                              <div className='absolute w-3 h-3 top-[13px] left-[13px] bg-[#171c2f] rounded-[6.05px]' />
-                            </div>
-                          </div>
-
-                          <div className='absolute w-[89px] h-[89px] top-[214px] left-[63px]'>
-                            <div className='relative h-[89px] rounded-[44.61px]'>
-                              <div className='absolute w-[89px] h-[89px] top-0 left-0 bg-[#ffffff66] rounded-[44.61px] opacity-20' />
-                              <div className='absolute w-12 h-12 top-5 left-5 bg-[#171c2f] rounded-[24.02px] opacity-20' />
-                              <div className='absolute w-6 h-6 top-8 left-8 bg-[#171c2f] rounded-[12.01px]' />
-                            </div>
-                          </div>
-
-                          <div className='absolute w-[425px] h-[299px] top-0 left-0 bg-[#387ff51a]' />
-                        </div>
-
-                        <div className='absolute w-[243px] h-[243px] top-[-106px] left-[-290px]'>
-                          <div className='relative h-[243px] rounded-[121.73px]'>
-                            <div className='absolute w-[243px] h-[243px] top-0 left-0 bg-[#ffffff66] rounded-[121.73px] opacity-20' />
-                            <div className='absolute w-[131px] h-[131px] top-[54px] left-[54px] bg-[#171c2f] rounded-[65.55px] opacity-20' />
-                          </div>
-                        </div>
-
-                        <div className='absolute w-[326px] h-[326px] top-[152px] left-[439px]'>
-                          <div className='relative h-[326px] rounded-[163.23px]'>
-                            <div className='absolute w-[326px] h-[326px] top-0 left-0 bg-[#ffffff66] rounded-[163.23px] opacity-20' />
-                            <div className='absolute w-44 h-44 top-[72px] left-[72px] bg-[#171c2f] rounded-[87.89px] opacity-20' />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <img
-                      className='absolute w-[266px] h-[201px] top-[121px] left-80'
-                      alt='Img lib metric pie'
-                      src='https://c.animaapp.com/mdd04i9koSfWJV/img/img-lib-metric-pie-chart-2.svg'
-                    />
-
-                    <img
-                      className='absolute w-[281px] h-[280px] top-0 left-0'
-                      alt='Img lib metric line'
-                      src='https://c.animaapp.com/mdd04i9koSfWJV/img/img-lib-metric-line-styling.svg'
-                    />
-                  </div>
-                </div>
+               <img src={smart} />
               </div>
 
               <div className='flex flex-col min-w-[360px] max-w-[480px] items-start justify-center gap-3 flex-1'>
@@ -827,152 +596,14 @@ export const MainContentSection = ({
               </div>
 
               <div className='flex flex-col min-w-[360px] items-center gap-2 flex-1'>
-                <div className='relative w-[524px] h-[341px]'>
-                  <div className='relative w-[556px] h-[390px] -left-8'>
-                    <div className='absolute w-[433px] h-[304px] top-0 left-[123px] rounded-2xl overflow-hidden'>
-                      <div className='relative w-[432px] h-[304px] left-px bg-[#387ff5] overflow-hidden'>
-                        <div className='absolute w-[1087px] h-[304px] top-0 left-[-268px]'>
-                          <img
-                            className='absolute w-[1068px] h-[239px] top-0 left-0'
-                            alt='Vector'
-                            src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-7.svg'
-                          />
-
-                          <img
-                            className='absolute w-[432px] h-[304px] top-0 left-[268px]'
-                            alt='Grid'
-                            src='https://c.animaapp.com/mdd04i9koSfWJV/img/grid.svg'
-                          />
-
-                          <img
-                            className='absolute w-[1068px] h-[232px] top-[30px] left-5'
-                            alt='Vector'
-                            src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-28.svg'
-                          />
-
-                          <img
-                            className='absolute w-[966px] h-[182px] top-14 left-[23px]'
-                            alt='Vector'
-                            src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-10.svg'
-                          />
-
-                          <img
-                            className='absolute w-1.5 h-1.5 top-[130px] left-[614px]'
-                            alt='Vector'
-                            src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-11.svg'
-                          />
-
-                          <img
-                            className='absolute w-[23px] h-[23px] top-[133px] left-[615px]'
-                            alt='Vector'
-                            src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-41.svg'
-                          />
-
-                          <img
-                            className='absolute w-5 h-5 top-[184px] left-[334px]'
-                            alt='Vector'
-                            src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-24.svg'
-                          />
-
-                          <img
-                            className='absolute w-2.5 h-2.5 top-[207px] left-[334px]'
-                            alt='Vector'
-                            src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-27.svg'
-                          />
-
-                          <img
-                            className='absolute w-[155px] h-[155px] top-[78px] left-[338px]'
-                            alt='Group'
-                            src='https://c.animaapp.com/mdd04i9koSfWJV/img/group-1.png'
-                          />
-
-                          <div className='w-[432px] h-[304px] top-0 left-[268px] absolute bg-[#387ff51a]' />
-                        </div>
-
-                        <div className='absolute w-[21px] h-[21px] top-[-4890px] left-[805px]'>
-                          <img
-                            className='absolute w-1.5 h-1.5 top-0 left-0'
-                            alt='Vector'
-                            src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-13.svg'
-                          />
-
-                          <img
-                            className='absolute w-2.5 h-2.5 top-0 left-0'
-                            alt='Vector'
-                            src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-6.svg'
-                          />
-
-                          <img
-                            className='absolute w-[21px] h-[21px] top-0 left-0'
-                            alt='Vector'
-                            src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-22.svg'
-                          />
-
-                          <img
-                            className='absolute w-[21px] h-[21px] top-0 left-0'
-                            alt='Vector'
-                            src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-26.svg'
-                          />
-
-                          <img
-                            className='absolute w-2 h-2 top-0 left-0'
-                            alt='Vector'
-                            src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-29.svg'
-                          />
-
-                          <img
-                            className='absolute w-2 h-2 top-0 left-0'
-                            alt='Vector'
-                            src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-30.svg'
-                          />
-                        </div>
-                      </div>
-                    </div>
-
-                    <img
-                      className='absolute w-[392px] h-[285px] top-[105px] left-0'
-                      alt='Img lib metric'
-                      src='https://c.animaapp.com/mdd04i9koSfWJV/img/img-lib-metric-stacked-bar-chart-1--medium-.svg'
-                    />
-                  </div>
-                </div>
+             <img src={data} />
               </div>
             </div>
 
             {/* Automation & Integration */}
             <div className='flex flex-wrap items-center gap-20 w-full justify-center bg-white'>
               <div className='flex flex-col min-w-[360px] items-center gap-2 flex-1'>
-                <div className='relative w-[522px] h-[339px]'>
-                  <div className='relative w-[554px] h-[349px] -top-2.5 -left-8'>
-                    <div className='absolute w-[425px] h-[298px] top-[39px] left-[79px] rounded-2xl overflow-hidden'>
-                      <div className='h-[299px] bg-[#387ff5]'>
-                        <div className='relative w-[425px] h-[299px]'>
-                          <img
-                            className='absolute w-[425px] h-[298px] top-0 left-0'
-                            alt='Group'
-                            src='https://c.animaapp.com/mdd04i9koSfWJV/img/group-2.png'
-                          />
-
-                          <div className='absolute w-[425px] h-[299px] top-0 left-0 bg-[#387ff51a]' />
-                        </div>
-                      </div>
-                    </div>
-
-                    <img
-                      className='absolute w-[276px] h-[283px] top-0 left-0'
-                      alt='Img lib metric chart'
-                      src='https://c.animaapp.com/mdd04i9koSfWJV/img/img-lib-metric-chart-3--small-.svg'
-                    />
-
-                    <div className='absolute w-[186px] h-[191px] top-[158px] left-[368px] bg-[#171c2f] rounded-xl overflow-hidden border border-solid border-[#e7f4ff] shadow-shadow-to-bot-neutral-2'>
-                      <img
-                        className='absolute w-[149px] h-[152px] top-4 left-[19px]'
-                        alt='Content'
-                        src='https://c.animaapp.com/mdd04i9koSfWJV/img/content.svg'
-                      />
-                    </div>
-                  </div>
-                </div>
+                <img src={auto} />
               </div>
 
               <div className='flex flex-col min-w-[360px] max-w-[480px] items-start justify-center gap-3 flex-1'>
@@ -998,7 +629,7 @@ export const MainContentSection = ({
           <img
             className='absolute w-[879px] h-[424px] top-24 left-0'
             alt='Mask group'
-            src='https://c.animaapp.com/mdd04i9koSfWJV/img/mask-group.svg'
+            src={mas}
           />
 
           <div className='flex flex-wrap h-[437px] items-start gap-10 w-full'>
@@ -1015,7 +646,7 @@ export const MainContentSection = ({
                   <img
                     className='absolute w-[21px] h-5 top-0.5 left-px'
                     alt='Vector'
-                    src='https://c.animaapp.com/mdd04i9koSfWJV/img/vector-25.svg'
+                    src={ai}
                   />
                 </div>
               </Button>

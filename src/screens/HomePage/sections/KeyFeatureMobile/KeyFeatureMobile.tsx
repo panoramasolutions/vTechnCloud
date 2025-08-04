@@ -3,6 +3,9 @@ import React from "react";
 import { Badge } from "../../../../components/ui/badge";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent, CardFooter } from "../../../../components/ui/card";
+import ai from '../../../../assets/AI.png';
+import deep from '../../../../assets/deep.png';
+import future from '../../../../assets/future.png';
 
 // const solutionCards = [
 //   {
@@ -72,26 +75,26 @@ import { Card, CardContent, CardFooter } from "../../../../components/ui/card";
 
   const solutionCards = [
     {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-3.svg',
+      icon:ai,
       title: 'Secure by Design',
       description:
         'Cybersecurity is at the core of everything we build. With zero-trust frameworks, continuous monitoring, and compliance-ready architectures, your systems stay protected.',
     },
     {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-6.svg',
+      icon: deep,
       title: 'Smart Cloud Engineering',
       description:
         "We offer an intuitive interface that's easy to navigate, ensuring you spend less time figuring things out and more time analyzing.",
     },
     {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-3.svg',
+      icon: future,
       title: 'Data-Driven Decisions',
       description:
         "Whether you're a startup or an enterprise, VTECHNOCLOUD scales with you. Experience robust analytics solutions that adapt to your growth.",
     },
 
     {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-6.svg',
+      icon:future,
       title: 'Automation & Integration',
       description:
         'Develop robust, scalable, and secure backend systems, automate business tasks, and build APIs using industry-best Python practices',

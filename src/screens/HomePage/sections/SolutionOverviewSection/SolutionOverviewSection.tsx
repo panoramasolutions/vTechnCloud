@@ -3,6 +3,11 @@ import React from "react";
 import { Badge } from "../../../../components/ui/badge";
 import { Button } from "../../../../components/ui/button";
 import { Card, CardContent, CardFooter } from "../../../../components/ui/card";
+import deep from '../../../../assets/deep.png';
+import future from '../../../../assets/future.png';
+import one from '../../../../assets/1.png';
+import two from '../../../../assets/2.png';
+import three from '../../../../assets/3.png';
 
 // const solutionCards = [
 //   {
@@ -71,76 +76,75 @@ import { Card, CardContent, CardFooter } from "../../../../components/ui/card";
 // ];
 
   const solutionCards = [
-    {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-6.svg',
-      title: 'AI/ML',
-      description:
-        'Deploy cutting-edge AI/ML solutions to automate decision-making, detect patterns, and enhance user experience with predictive insights',
-    },
-    {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-3.svg',
-      title: 'Cloud Strategy & Consulting',
-      description:
-        'From total visioning to tactical cloud roadmaps, cost modeling, and vendor-neutral governance across AWS, Azure & GCP.',
-    },
-    {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-6.svg',
-      title: 'Data Engineering',
-      description:
-        "We provide support for any models ranging from data analysis,data engineering to even data science."
-    },
-    {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-3.svg',
-      title: 'Full-Stack Development',
-      description:
-        "Build robust end to end solutions in any full stack frameworks like Java, Dotnet, MEAN, MERN etc.",
-    },
-
-    {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-6.svg',
-      title: 'Python Expert',
-      description:
-        'Develop robust, scalable, and secure backend systems, automate business tasks, and build APIs using industry-best Python practices',
-    },
-
-    
-    {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-1.svg',
-      title: 'Business Intelligence(Power BI)',
-      description:
-        'Leverage Power BI dashboards and reports to gain visual insights, monitor KPIs, and drive smarter business strategies',
-    },
-
-    {
-     icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-3.svg',
-      title: 'Automation & DevOps',
-      description:
-        'Streamline delivery pipelines, cut errors, and embrace agility with full-stack CI/CD and IaC.',
-    },
-
-    {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-1.svg',
-      title: 'Business Development',
-      description:
-        "Receive automated insights and recommendations tailored to your business needs. Let VTECHNOCLOUD's AI guide your strategies.",
-    },
-
-    {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/component-1-2.svg',
-      title: 'Networking & Infrastructure',
-      description:
-        'Architect resilient networks—wired, wireless, hybrid—designed for performance and security.',
-    },
-  ];
+      {
+        icon: one,
+        title: 'AI/ML',
+        description:
+          'Deploy cutting-edge AI/ML solutions to automate decision-making, detect patterns, and enhance user experience with predictive insights',
+      },
+      {
+        icon: two,
+        title: 'Cloud Strategy & Consulting',
+        description:
+          'From total visioning to tactical cloud roadmaps, cost modeling, and vendor-neutral governance across AWS, Azure & GCP.',
+      },
+      {
+        icon: three,
+        title: 'Data Engineering',
+        description:
+          'We provide support for any models ranging from data analysis,data engineering to even data science.',
+      },
+      {
+        icon: three,
+        title: 'Full-Stack Development',
+        description:
+          'Build robust end to end solutions in any full stack frameworks like Java, Dotnet, MEAN, MERN etc.',
+      },
+  
+      {
+        icon: one,
+        title: 'Python Expert',
+        description:
+          'Develop robust, scalable, and secure backend systems, automate business tasks, and build APIs using industry-best Python practices',
+      },
+  
+      {
+        icon: two,
+        title: 'Business Intelligence(Power BI)',
+        description:
+          'Leverage Power BI dashboards and reports to gain visual insights, monitor KPIs, and drive smarter business strategies',
+      },
+  
+      {
+        icon: two,
+        title: 'Automation & DevOps',
+        description:
+          'Streamline delivery pipelines, cut errors, and embrace agility with full-stack CI/CD and IaC.',
+      },
+  
+      {
+        icon: one,
+        title: 'Business Development',
+        description:
+          "Receive automated insights and recommendations tailored to your business needs. Let VTECHNOCLOUD's AI guide your strategies.",
+      },
+  
+      {
+        icon: three,
+        title: 'Networking & Infrastructure',
+        description:
+          'Architect resilient networks—wired, wireless, hybrid—designed for performance and security.',
+      },
+    ];
   const featureCards = [
     {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/vector-32.svg',
+      icon: deep,
       title: 'End-to-End Solutions',
       description:
         'We provide complete IT solutions tailored to your business—from strategy and architecture to development, deployment, and ongoing support. Our core focus areas include Cloud Technologies, DevSecOps, and scalable digital infrastructure.',
     },
     {
-      icon: 'https://c.animaapp.com/mdd04i9koSfWJV/img/vector-45.svg',
+      icon: future,
       title: 'Staffing',
       description:'We help companies scale their teams with highly skilled professionals across various technologies. Whether its short-term project support or long-term resource needs, we provide reliable talent for all the major technologies.',
     },

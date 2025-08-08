@@ -69,13 +69,13 @@ export const MainContentSection = ({
       icon: deep,
       title: 'End-to-End Solutions',
       description:
-        'We provide complete IT solutions tailored to your business—from strategy and architecture to development, deployment, and ongoing support. Our core focus areas include Cloud Technologies, DevSecOps, and scalable digital infrastructure.',
+        'We provide complete IT Solutions tailored to your Business—from Strategy and Architecture to Development, Deployment, and Ongoing Support. Our Core focus areas include Cloud Technologies, DevSecOps, and Scalable Digital Infrastructure.',
     },
     {
       icon: future,
       title: 'Staffing',
       description:
-        'We help companies scale their teams with highly skilled professionals across various technologies. Whether its short-term project support or long-term resource needs, we provide reliable talent for all the major technologies.',
+        'We help Companies scale their teams with highly skilled Professionals across various Technologies. Whether its short-term project support or long-term resource needs, we provide reliable talent for all the major technologies.',
     },
   ];
 

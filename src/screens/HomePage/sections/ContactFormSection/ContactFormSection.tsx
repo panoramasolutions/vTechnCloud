@@ -22,7 +22,11 @@ interface FormData {
 
 const GOOGLE_FORM_URL = 'https://script.google.com/macros/s/AKfycbw1QwDMYTyB2Zhbq8LnM4Z3QTAPG1jbrE5KVv7GfcC_AutbK3BJqKePnPn2uLd8ryGO/exec';
 
-export const ContactFormSection = (): JSX.Element => {
+interface ContactFormSectionProps {
+  contactusRef?: React.RefObject<HTMLElement>;
+}
+
+export const ContactFormSection = ({contactusRef} :ContactFormSectionProps): JSX.Element => {
   const [formData, setFormData] = useState<FormData>({
     firstName: "",
     lastName: "",
@@ -32,19 +36,33 @@ export const ContactFormSection = (): JSX.Element => {
     privacy: false,
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-
+  const [formSubmitted, setFormSubmitted] = useState(false);
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
 
     try {
-      const response = await fetch(GOOGLE_FORM_URL, {
+    /*   const response = await fetch(GOOGLE_FORM_URL, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify(formData)
+      }); */
+
+      const formBody = new FormData();
+      formBody.append('firstname', formData.firstName);
+      formBody.append('lastname', formData.lastName);
+      formBody.append('email', formData.email);
+      formBody.append('phone', formData.phone);
+      formBody.append('message', formData.message);
+      //formBody.append('privacy', formData.privacy ? 'Yes' : 'No');
+
+      const response = await fetch(GOOGLE_FORM_URL, {
+        method: 'POST',
+        body: formBody,
       });
+
 
       const result = await response.json();
 
@@ -108,7 +126,7 @@ export const ContactFormSection = (): JSX.Element => {
     <section className="flex flex-col items-center w-full py-8 px-8 bg-white"  style={{
                
                   paddingTop: window.innerWidth < 640 ? "0rem" : "2rem",
-                }}>
+                }} ref={contactusRef}>
       <div className="flex flex-col items-center gap-32 max-w-[1204px] w-full">
         {/* Header Section */}
        
@@ -145,7 +163,8 @@ export const ContactFormSection = (): JSX.Element => {
             We’d love to hear from you. Please fill out this form.
               </h2>
               
-              <form onSubmit={handleSubmit} className="flex flex-col gap-6">
+              <form action={GOOGLE_FORM_URL}  method="POST"  target="hidden_iframe"  onSubmit={() => setFormSubmitted(true)}  className="flex flex-col gap-6">
+           
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="flex flex-col gap-2">
                     <label className="font-body-base-medium text-[#343844]">
@@ -249,6 +268,26 @@ export const ContactFormSection = (): JSX.Element => {
                   {isSubmitting ? "Sending..." : "Send message"}
                 </Button>
               </form>
+              <iframe
+  name="hidden_iframe"
+  id="hidden_iframe"
+  style={{ display: 'none' }}
+  onLoad={() => {
+    if (formSubmitted) {
+      toast.success("Message sent successfully!");
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        phone: "",
+        message: "",
+        privacy: false,
+      });
+      setFormSubmitted(false);
+    }
+  }}
+></iframe>
+
             </div>
           </div>
 
@@ -265,16 +304,7 @@ export const ContactFormSection = (): JSX.Element => {
               >
                 We’d love to hear from you
               </h1>
-              <h2 className="font-heading-desktop-h3-bold text-[#343844]  text-[20px]"
-               style={{
-               
-                  fontSize: window.innerWidth < 640 ? "14px" : "20px",
-                   fontWeight: "400",
-                }}
               
-              >
-             Need something cleared up? Here are our most frequently asked questions.
-              </h2>
               </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               {contactInfo.map((info, index) => (
@@ -292,12 +322,12 @@ export const ContactFormSection = (): JSX.Element => {
                       {info.description}
                     </p>
                     {info.type === 'email' && (
-                      <a href={`mailto:${info.contact}`} className="font-body-base-semibold text-[#387ff5]">
+                      <a  className="font-body-base-semibold text-[#387ff5]">
                         {info.contact}
                       </a>
                     )}
                     {info.type === 'phone' && (
-                      <a href={`tel:${info.contact}`} className="font-body-base-semibold text-[#387ff5]">
+                      <a  className="font-body-base-semibold text-[#387ff5]">
                         {info.contact}
                       </a>
                     )}

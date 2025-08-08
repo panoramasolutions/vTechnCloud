@@ -7,7 +7,9 @@ import {
 import React from "react";
 import { Separator } from "../../../../components/ui/seperator";
 import logo from "../../../../assets/logo.svg";
-export const FooterSection = (): JSX.Element => {
+
+
+export const FooterSection = ({ handleNavClick,}): JSX.Element => {
   const [isDesktop, setIsDesktop] = React.useState(
     typeof window !== "undefined" ? window.innerWidth > 810 : true
   );
@@ -41,7 +43,7 @@ export const FooterSection = (): JSX.Element => {
         { text: "VTECHNOCLOUD SOLUTIONS INC", url: "#" },
                 { text: "1550 WATERS RIDGE DR BLDG1 STE 300 LEWISVILLE, TX 75057", url: "#" },
         { text: "E-Mail: info@vtechnocloud.com", url: "#" },
-        { text: "Phone: ‪+1 (469) 427-0751", url: "#" },
+        { text: "Phone: ‪+1 (469) 427-0050", url: "#" },
       ],
     },
     {
@@ -129,9 +131,7 @@ export const FooterSection = (): JSX.Element => {
                             alt="Nimbus logo"
                             className="absolute w-[180] h-[30] top-[-30px] left-0"
                             /></div>
-            <div className="flex flex-col h-px items-center justify-center gap-2 flex-1">
-              <Separator className="w-full h-px" />
-            </div>
+           
           </div>
           <div className="flex flex-wrap gap-[32px] w-full items-start">
             {isDesktop ? (
@@ -147,7 +147,14 @@ export const FooterSection = (): JSX.Element => {
                     {column.links.map((link, linkIndex) => (
                       <span
                         key={`link-${linkIndex}`}
-                        className={`font-button-base-medium text-[#343844] tracking-[var(--button-base-medium-letter-spacing)] leading-[var(--button-base-medium-line-height)] inline-flex gap-2 text-[16px]`}
+                        className={`font-button-base-medium text-[#343844] tracking-[var(--button-base-medium-letter-spacing)] leading-[var(--button-base-medium-line-height)] inline-flex gap-2 text-[16px] ${
+    link.text === "Contact Us" ? "cursor-pointer" : ""
+  } `}
+                       
+                      onClick={ 
+                        link.text === "Contact Us" ? () => handleNavClick('Contact us')
+                      : undefined
+                      }
                       >
                         {link.icon}{"  "} {link.text}
                       </span>
@@ -170,6 +177,10 @@ export const FooterSection = (): JSX.Element => {
                         <span
                           key={`link-mobile-${linkIndex}`}
                           className="font-button-base-medium text-[#343844] tracking-[var(--button-base-medium-letter-spacing)] leading-[var(--button-base-medium-line-height)] inline-flex gap-2 text-[8px]"
+                         onClick={ 
+                        link.text === "Contact Us" ? () => handleNavClick('Contact us')
+                      : undefined
+                      }
                         >
                           {link.icon}{"  "} {link.text}
                         </span>
